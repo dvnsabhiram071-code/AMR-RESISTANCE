@@ -1,0 +1,21 @@
+{
+  "name": "amr-sentinel",
+  "version": "1.0.0",
+  "description": "AMR Sentinel - Antimicrobial Resistance Surveillance & Early Warning Intelligence",
+  "scripts": {
+    "start": "py server.py || python server.py",
+    "dev": "py server.py || python server.py",
+    "serve": "py server.py || python server.py",
+    "streamlit": "py -m streamlit run app.py || streamlit run app.py",
+    "test": "py -m pytest || pytest"
+  },
+  "keywords": [
+    "amr",
+    "antimicrobial-resistance",
+    "surveillance",
+    "healthcare",
+    "epidemiology"
+  ],
+  "author": "AMR Sentinel Team",
+  "license": "MIT"
+}

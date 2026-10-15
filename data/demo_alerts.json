@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ALT-001",
+    "severity": "Critical",
+    "title": "Elevated carbapenem resistance signal",
+    "organism": "Klebsiella pneumoniae",
+    "department": "ICU",
+    "summary": "Synthetic demo data shows a higher-than-baseline meropenem resistance proportion in recent ICU isolates.",
+    "status": "Open",
+    "date": "2026-10-11",
+    "recommended_action": "Validate the signal with the microbiology lead; review isolate counts, methods and infection-prevention context."
+  },
+  {
+    "id": "ALT-002",
+    "severity": "High",
+    "title": "Unusual Acinetobacter resistance cluster",
+    "organism": "Acinetobacter baumannii",
+    "department": "Surgery",
+    "summary": "A simulated cluster of resistant results warrants review for possible data or epidemiological patterns.",
+    "status": "Investigating",
+    "date": "2026-10-10",
+    "recommended_action": "Check for duplicate isolates, confirm susceptibility results and follow local infection-control escalation procedures."
+  },
+  {
+    "id": "ALT-003",
+    "severity": "Medium",
+    "title": "Rising fluoroquinolone resistance trend",
+    "organism": "Escherichia coli",
+    "department": "Medicine",
+    "summary": "The synthetic monthly trend increases over the latest reporting periods.",
+    "status": "Open",
+    "date": "2026-10-09",
+    "recommended_action": "Review the trend against local antibiogram policy and verify the underlying sample size."
+  },
+  {
+    "id": "ALT-004",
+    "severity": "Low",
+    "title": "Incomplete specimen metadata",
+    "organism": "Multiple",
+    "department": "Emergency",
+    "summary": "Some simulated records contain pending review status and should be checked before reporting.",
+    "status": "Resolved",
+    "date": "2026-10-08",
+    "recommended_action": "Complete the required metadata fields and document data validation."
+  }
+]

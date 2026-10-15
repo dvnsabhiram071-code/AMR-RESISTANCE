@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — AMR Sentinel Antimicrobial Resistance Surveillance & Early Warning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script src="data/india_svg_paths.js"></script>
+  <style>
+    :root {
+      --bg-space: #030C1C;
+      --bg-panel: #071836;
+      --card-bg: rgba(10, 25, 52, 0.72);
+      --card-border: rgba(0, 195, 255, 0.16);
+      --accent-cyan: #00E5FF;
+      --accent-blue: #0284C7;
+      --accent-teal: #14B8A6;
+      --accent-purple: #A855F7;
+      --accent-coral: #EF4444;
+      --text-white: #FFFFFF;
+      --text-muted: #94A3B8;
+      --text-dark: #0F172A;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-space);
+      color: var(--text-white);
+      min-height: 100vh;
+      display: flex;
+      overflow-x: hidden;
+    }
+
+    /* Cohesive Deep Navy Layout */
+    .login-container {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      width: 100vw;
+      min-height: 100vh;
+      background: radial-gradient(circle at 65% 35%, #082147 0%, #030D1E 65%, #010610 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Ambient Wave Lines at Bottom Left */
+    .ambient-waves-svg {
+      position: absolute;
+      bottom: -60px;
+      left: -60px;
+      width: 700px;
+      height: 400px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.28;
+    }
+
+    /* ======================================================== */
+    /* LEFT PANEL: Surveillance Features & Orbital Visuals       */
+    /* ======================================================== */
+    .login-left {
+      padding: 44px 54px 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 5;
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Top Brand */
+    .left-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .left-brand-icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.4));
+    }
+
+    .left-brand-text h1 {
+      font-size: 21px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.2px;
+      line-height: 1.1;
+    }
+
+    .left-brand-text p {
+      font-size: 11px;
+      color: #00E5FF;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    /* Hero Text & Tagline */
+    .left-hero-text {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 580px;
+      margin-top: 6px;
+    }
+
+    .left-tagline {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: #38BDF8;
+      text-transform: uppercase;
+    }
+
+    .left-headline {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -1px;
+    }
+
+    .left-headline .cyan-accent {
+      color: #00E5FF;
+      background: linear-gradient(135deg, #0284C7 0%, #00E5FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .left-description {
+      font-size: 13.5px;
+      color: #94A3B8;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    /* ======================================================== */
+    /* ANIMATED INDIA SURVEILLANCE GLOBE (Screenshot 4)        */
+    /* ======================================================== */
+    .orbital-art-wrap {
+      position: absolute;
+      top: 55px;
+      right: 20px;
+      width: 440px;
+      height: 400px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .globe-center-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 229, 255, 0.28) 0%, rgba(2, 132, 199, 0.14) 45%, transparent 70%);
+      filter: blur(24px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .orbital-ring-svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Rotating Globe Rings */
+    .globe-ring-outer {
+      transform-origin: 220px 200px;
+      animation: rotateClockwise 65s linear infinite;
+    }
+
+    .globe-ring-mid {
+      transform-origin: 220px 200px;
+      animation: rotateCounter 48s linear infinite;
+    }
+
+    .globe-ring-inner {
+      transform-origin: 220px 200px;
+      animation: rotateClockwise 36s linear infinite;
+    }
+
+    @keyframes rotateClockwise {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    @keyframes rotateCounter {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(-360deg); }
+    }
+
+    /* Signal lights traveling / pulsing along orbital ring */
+    .pulse-signal-dot {
+      fill: #00E5FF;
+      filter: drop-shadow(0 0 6px #00E5FF);
+      animation: signalPulse 2.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes signalPulse {
+      0%   { opacity: 0.35; r: 2.2px; }
+      100% { opacity: 1.0;  r: 4.2px; }
+    }
+
+    .orbital-india-path-group {
+      filter: drop-shadow(0 0 16px rgba(0, 229, 255, 0.85));
+    }
+
+    /* Orbiting Medical Icons System (4 concentric tracks) */
+    .orbit-system {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .orbit-track {
+      position: absolute;
+      top: 200px;
+      left: 220px;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* Track 1: Biohazard (outer orbit, clockwise) */
+    .orbit-track-1 {
+      width: 330px;
+      height: 330px;
+      margin-top: -165px;
+      margin-left: -165px;
+      animation: orbitRotate 50s linear infinite;
+    }
+
+    /* Track 2: Pill / Antimicrobial (mid-outer orbit, counter-clockwise) */
+    .orbit-track-2 {
+      width: 270px;
+      height: 270px;
+      margin-top: -135px;
+      margin-left: -135px;
+      animation: orbitRotateRev 42s linear infinite;
+    }
+
+    /* Track 3: Laboratory Flask (wide orbit, clockwise) */
+    .orbit-track-3 {
+      width: 360px;
+      height: 360px;
+      margin-top: -180px;
+      margin-left: -180px;
+      animation: orbitRotate 58s linear infinite;
+    }
+
+    /* Track 4: Microorganism / Bacteria (inner-mid orbit, counter-clockwise) */
+    .orbit-track-4 {
+      width: 290px;
+      height: 290px;
+      margin-top: -145px;
+      margin-left: -145px;
+      animation: orbitRotateRev 46s linear infinite;
+    }
+
+    @keyframes orbitRotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    @keyframes orbitRotateRev {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(-360deg); }
+    }
+
+    .orbit-node-carrier {
+      position: absolute;
+      pointer-events: auto;
+    }
+
+    .carrier-top    { top: -19px; left: calc(50% - 19px); }
+    .carrier-right  { top: calc(50% - 19px); right: -19px; }
+    .carrier-left   { top: calc(50% - 19px); left: -19px; }
+    .carrier-bottom { bottom: -19px; left: calc(50% - 19px); }
+
+    /* Counter-rotate bubbles so icons stay upright */
+    .orbit-track-1 .bio-node-bubble { animation: counterRotate 50s linear infinite; }
+    .orbit-track-2 .bio-node-bubble { animation: counterRotateRev 42s linear infinite; }
+    .orbit-track-3 .bio-node-bubble { animation: counterRotate 58s linear infinite; }
+    .orbit-track-4 .bio-node-bubble { animation: counterRotateRev 46s linear infinite; }
+
+    @keyframes counterRotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(-360deg); }
+    }
+
+    @keyframes counterRotateRev {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .bio-node-bubble {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(8, 28, 62, 0.94);
+      border: 1.5px solid rgba(0, 229, 255, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00E5FF;
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.42);
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .bio-node-bubble:hover {
+      transform: scale(1.15);
+      border-color: #FFFFFF;
+      box-shadow: 0 0 24px rgba(0, 229, 255, 0.75);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .globe-ring-outer,
+      .globe-ring-mid,
+      .globe-ring-inner,
+      .orbit-track-1,
+      .orbit-track-2,
+      .orbit-track-3,
+      .orbit-track-4,
+      .bio-node-bubble,
+      .pulse-signal-dot {
+        animation: none !important;
+      }
+    }
+
+    /* ======================================================== */
+    /* 6 FEATURE CARDS GRID (3 COLUMNS x 2 ROWS)                */
+    /* ======================================================== */
+    .left-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .left-feat-card {
+      background: rgba(10, 25, 52, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 195, 255, 0.16);
+      border-radius: 12px;
+      padding: 13px 14px;
+      display: flex;
+      gap: 12px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .left-feat-card:hover {
+      background: rgba(14, 34, 70, 0.9);
+      border-color: rgba(0, 229, 255, 0.45);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 229, 255, 0.15);
+    }
+
+    .card-icon-box {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon-box-cyan   { background: rgba(0, 229, 255, 0.14); color: #00E5FF; }
+    .icon-box-purple { background: rgba(168, 85, 247, 0.16); color: #C084FC; }
+    .icon-box-coral  { background: rgba(239, 68, 68, 0.16); color: #F87171; }
+    .icon-box-blue   { background: rgba(59, 130, 246, 0.16); color: #60A5FA; }
+    .icon-box-teal   { background: rgba(20, 184, 166, 0.16); color: #2DD4BF; }
+    .icon-box-violet { background: rgba(192, 132, 252, 0.16); color: #E879F9; }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .card-info h4 {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+    }
+
+    .card-info h4 .card-arrow {
+      color: #64748B;
+      font-size: 11px;
+      transition: transform 0.2s ease, color 0.2s ease;
+      margin-left: 4px;
+    }
+
+    .left-feat-card:hover .card-arrow {
+      color: #00E5FF;
+      transform: translateX(3px);
+    }
+
+    .card-info p {
+      font-size: 10.5px;
+      color: #94A3B8;
+      line-height: 1.35;
+    }
+
+    /* Left Bottom Badge */
+    .left-bottom-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(14, 165, 233, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: 20px;
+      color: #00E5FF;
+      font-size: 11.5px;
+      font-weight: 600;
+      width: fit-content;
+      margin-top: 16px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* ======================================================== */
+    /* RIGHT PANEL: Floating Crisp White Login Card            */
+    /* ======================================================== */
+    .login-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .login-card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 24px 28px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.45), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    /* Brand Header inside Card */
+    .card-brand-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-brand-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-brand-text h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -0.2px;
+      line-height: 1.1;
+    }
+
+    .card-brand-text p {
+      font-size: 10px;
+      color: #0284C7;
+      font-weight: 600;
+    }
+
+    /* Welcome Title */
+    .card-title-group h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -0.3px;
+    }
+
+    .card-title-group p {
+      font-size: 12.5px;
+      color: #64748B;
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    /* Alert Message Box */
+    .auth-alert-msg {
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      display: none;
+    }
+    .auth-alert-msg.error {
+      display: flex;
+      background: #FEE2E2;
+      border: 1px solid #FCA5A5;
+      color: #B91C1C;
+    }
+    .auth-alert-msg.success {
+      display: flex;
+      background: #DCFCE7;
+      border: 1px solid #86EFAC;
+      color: #15803D;
+    }
+
+    /* Form Fields */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-prefix-icon {
+      position: absolute;
+      left: 14px;
+      color: #94A3B8;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 44px;
+      padding: 0 40px 0 40px;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: var(--text-dark);
+      background: #FFFFFF;
+      transition: all 0.15s ease;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .form-input:focus {
+      border-color: #0284C7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .input-suffix-btn {
+      position: absolute;
+      right: 12px;
+      background: none;
+      border: none;
+      color: #94A3B8;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+    }
+
+    /* Role Selector Styling */
+    .role-selector-container {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .role-cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .role-card {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      user-select: none;
+      outline: none;
+    }
+
+    .role-card:hover {
+      background: #F1F5F9;
+      border-color: #94A3B8;
+      transform: translateY(-1px);
+    }
+
+    .role-card:focus-visible {
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.25);
+    }
+
+    .role-card.active {
+      background: #F0F9FF;
+      border-color: #0284C7;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.15);
+    }
+
+    .role-card-radio {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .radio-indicator {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #CBD5E1;
+      background: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+
+    .role-card.active .radio-indicator {
+      border-color: #0284C7;
+      background: #0284C7;
+    }
+
+    .role-card.active .radio-indicator::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #FFFFFF;
+    }
+
+    .role-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .role-card-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .role-card-icon {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+    }
+
+    .role-card-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    .role-card.active .role-card-title {
+      color: #0369A1;
+    }
+
+    .role-card-desc {
+      font-size: 10.5px;
+      color: #64748B;
+      line-height: 1.3;
+    }
+
+    .btn-quick-fill {
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-quick-fill:hover {
+      background: #E0F2FE;
+      border-color: #0284C7;
+      color: #0369A1;
+    }
+
+    .input-suffix-btn:hover {
+      color: #0F172A;
+    }
+
+    .form-extra-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      color: #475569;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checkbox-label input {
+      accent-color: #0284C7;
+      width: 15px;
+      height: 15px;
+    }
+
+    .forgot-link {
+      color: #0284C7;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Buttons */
+    .btn-submit-signin {
+      height: 44px;
+      background: linear-gradient(90deg, #0284C7 0%, #00B4D8 100%);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    .btn-submit-signin:hover {
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .or-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #94A3B8;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .or-divider::before, .or-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #E2E8F0;
+    }
+
+    .btn-demo-access {
+      height: 44px;
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      color: #1E293B;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      width: 100%;
+    }
+
+    .btn-demo-access:hover {
+      border-color: #0284C7;
+      background: #F8FAFC;
+    }
+
+    .demo-pill-badge {
+      background: #E0F2FE;
+      color: #0284C7;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-left: 6px;
+    }
+
+    .back-home-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: #0284C7;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 2px;
+    }
+
+    .back-home-link:hover {
+      text-decoration: underline;
+    }
+
+    .card-footer-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 10px;
+      color: #94A3B8;
+      border-top: 1px solid #F1F5F9;
+      padding-top: 12px;
+    }
+
+    /* Pulse Tagline in Bottom Right */
+    .bottom-right-tagline {
+      position: absolute;
+      bottom: 22px;
+      right: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #00E5FF;
+      letter-spacing: 0.2px;
+    }
+
+    /* Mandatory Password Change View */
+    #pwdChangeSection {
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .policy-checklist {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 11.5px;
+      color: #475569;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .policy-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .policy-item.valid {
+      color: #10B981;
+      font-weight: 600;
+    }
+
+    .policy-item.invalid {
+      color: #64748B;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1080px) {
+      .login-container {
+        grid-template-columns: 1fr;
+      }
+      .login-left {
+        display: none;
+      }
+      .login-right {
+        min-height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    
+    <!-- Ambient Wave Lines Background in Deep Blue Space -->
+    <svg class="ambient-waves-svg" viewBox="0 0 700 400" fill="none">
+      <path d="M-50,420 C120,380 220,290 350,330 C480,370 560,250 720,280" stroke="#00E5FF" stroke-width="1.2" opacity="0.3"/>
+      <path d="M-50,450 C100,410 240,320 380,360 C520,400 600,280 750,310" stroke="#0284C7" stroke-width="1.2" opacity="0.25"/>
+      <path d="M-50,480 C80,440 260,350 410,390 C560,430 640,310 780,340" stroke="#00E5FF" stroke-width="0.8" opacity="0.2"/>
+    </svg>
+
+    <!-- ======================================================== -->
+    <!-- LEFT PANEL: Brand, Headline, Orbital Map, 6 Feature Cards -->
+    <!-- ======================================================== -->
+    <div class="login-left">
+      
+      <!-- Central Animated India Surveillance Globe -->
+      <div class="orbital-art-wrap">
+        <!-- Soft Cyan-Blue Radial Glow behind India -->
+        <div class="globe-center-glow"></div>
+
+        <svg class="orbital-ring-svg" viewBox="0 0 440 400">
+          <defs>
+            <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.32"/>
+              <stop offset="55%" stop-color="#0284C7" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#030D1E" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+
+          <!-- Globe Sphere Graticule Mesh (Latitude & Longitude Arcs) -->
+          <circle cx="220" cy="200" r="175" fill="url(#ringGlow)" stroke="rgba(0, 229, 255, 0.18)" stroke-width="1.2"/>
+          <ellipse cx="220" cy="200" rx="175" ry="58" fill="none" stroke="rgba(2, 132, 199, 0.2)" stroke-width="0.9" stroke-dasharray="3 5"/>
+          <ellipse cx="220" cy="200" rx="175" ry="118" fill="none" stroke="rgba(2, 132, 199, 0.2)" stroke-width="0.9" stroke-dasharray="3 5"/>
+          <ellipse cx="220" cy="200" rx="58" ry="175" fill="none" stroke="rgba(2, 132, 199, 0.2)" stroke-width="0.9" stroke-dasharray="3 5"/>
+          <ellipse cx="220" cy="200" rx="118" ry="175" fill="none" stroke="rgba(2, 132, 199, 0.2)" stroke-width="0.9" stroke-dasharray="3 5"/>
+          <line x1="45" y1="200" x2="395" y2="200" stroke="rgba(0, 229, 255, 0.15)" stroke-width="0.9"/>
+          <line x1="220" y1="25" x2="220" y2="375" stroke="rgba(0, 229, 255, 0.15)" stroke-width="0.9"/>
+
+          <!-- Rotating Outer Coordinate Ring (Clockwise) with Traveling Signal Dots -->
+          <g class="globe-ring-outer">
+            <circle cx="220" cy="200" r="185" fill="none" stroke="rgba(0, 229, 255, 0.25)" stroke-width="1.2" stroke-dasharray="5 7"/>
+            <circle cx="220" cy="15" r="3.5" class="pulse-signal-dot"/>
+            <circle cx="405" cy="200" r="2.8" class="pulse-signal-dot"/>
+            <circle cx="35" cy="200" r="2.8" class="pulse-signal-dot"/>
+          </g>
+
+          <!-- Rotating Middle Ring (Counter-Clockwise) -->
+          <g class="globe-ring-mid">
+            <circle cx="220" cy="200" r="148" fill="none" stroke="rgba(2, 132, 199, 0.35)" stroke-width="1" stroke-dasharray="8 6"/>
+            <circle cx="368" cy="200" r="3" class="pulse-signal-dot"/>
+            <circle cx="72" cy="200" r="3" class="pulse-signal-dot"/>
+          </g>
+
+          <!-- Rotating Inner Coordinate Ring (Clockwise) -->
+          <g class="globe-ring-inner">
+            <circle cx="220" cy="200" r="100" fill="none" stroke="rgba(0, 229, 255, 0.2)" stroke-width="1" stroke-dasharray="2 5"/>
+          </g>
+
+          <!-- Stationary Glowing Cyan India Map in Center -->
+          <g id="orbitalIndiaGroup" class="orbital-india-path-group" transform="translate(152, 105) scale(0.24)">
+            <!-- Rendered dynamically by script from window.INDIA_SVG_PATHS -->
+          </g>
+        </svg>
+
+        <!-- 4 Orbiting Medical Icons System -->
+        <div class="orbit-system">
+          
+          <!-- Orbit 1: Biohazard (Clockwise, radius 165px) -->
+          <div class="orbit-track orbit-track-1">
+            <div class="orbit-node-carrier carrier-top">
+              <div class="bio-node-bubble" title="Biohazard Surveillance">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="2"/>
+                  <path d="M12 4a5 5 0 0 1 5 5c0 1.2-.4 2.3-1.1 3.2M12 4a5 5 0 0 0-5 5c0 1.2.4 2.3 1.1 3.2M7 17a5 5 0 0 0 3.9 1.9c1.4 0 2.6-.6 3.4-1.6M17 17a5 5 0 0 1-3.9 1.9c-1.4 0-2.6-.6-3.4-1.6M8.5 7.5a4 4 0 0 1 7 0"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbit 2: Pill / Antimicrobial (Counter-Clockwise, radius 135px) -->
+          <div class="orbit-track orbit-track-2">
+            <div class="orbit-node-carrier carrier-right">
+              <div class="bio-node-bubble" title="Antimicrobial Agent">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/>
+                  <path d="m8.5 8.5 7 7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbit 3: Laboratory Flask (Clockwise, radius 180px) -->
+          <div class="orbit-track orbit-track-3">
+            <div class="orbit-node-carrier carrier-left">
+              <div class="bio-node-bubble" title="Susceptibility Assay">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M10 2v7.31L4.1 19.46A2 2 0 0 0 5.8 22h12.4a2 2 0 0 0 1.7-2.54L14 9.31V2"/>
+                  <path d="M8.5 2h7"/>
+                  <path d="M7 16h10"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orbit 4: Microorganism / Bacteria (Counter-Clockwise, radius 145px) -->
+          <div class="orbit-track orbit-track-4">
+            <div class="orbit-node-carrier carrier-bottom">
+              <div class="bio-node-bubble" title="Bacterial Pathogen">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="6"/>
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Top Brand -->
+      <div class="left-content">
+        <a href="/" class="left-brand">
+          <div class="left-brand-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L4 5V11C4 16.5 7.5 21 12 22C16.5 21 20 16.5 20 11V5L12 2Z" fill="url(#shieldLeftBrand)" stroke="#00E5FF" stroke-width="1.2"/>
+              <path d="M12 7V17M7 12H17" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="shieldLeftBrand" x1="4" y1="2" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0284C7"/>
+                  <stop offset="1" stop-color="#00E5FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="left-brand-text">
+            <h1>AMR Sentinel</h1>
+            <p>Antimicrobial Resistance Surveillance & Early Warning</p>
+          </div>
+        </a>
+
+        <!-- Headline & Story -->
+        <div class="left-hero-text">
+          <div class="left-tagline">Smarter Surveillance. Healthier Tomorrows.</div>
+          <h2 class="left-headline">
+            See Resistance Earlier.<br>
+            <span class="cyan-accent">Respond with Evidence.</span>
+          </h2>
+          <p class="left-description">
+            AI-powered surveillance, real-time alerts and actionable insights for a safer, healthier tomorrow. Track resistance patterns, monitor geographic trends, and get AI-assisted analysis for faster, smarter decisions.
+          </p>
+        </div>
+
+        <!-- 6 Feature Cards in 3x2 Grid (Matching Screenshot 4) -->
+        <div class="left-cards-grid">
+          
+          <!-- Row 1: Geographic Surveillance -->
+          <a href="/#view-map" class="left-feat-card">
+            <div class="card-icon-box icon-box-cyan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>Geographic Surveillance <span class="card-arrow">&rarr;</span></h4>
+              <p>Monitor resistance patterns across regions and healthcare systems.</p>
+            </div>
+          </a>
+
+          <!-- Row 1: Resistance Trends -->
+          <a href="/#view-trends" class="left-feat-card">
+            <div class="card-icon-box icon-box-purple">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M3 3v18h18"/>
+                <path d="m19 9-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>Resistance Trends <span class="card-arrow">&rarr;</span></h4>
+              <p>Track temporal trends and identify emerging patterns.</p>
+            </div>
+          </a>
+
+          <!-- Row 1: Alert Center -->
+          <a href="/#view-alerts" class="left-feat-card">
+            <div class="card-icon-box icon-box-coral">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>Alert Center <span class="card-arrow">&rarr;</span></h4>
+              <p>Get early warnings and investigate unusual increases.</p>
+            </div>
+          </a>
+
+          <!-- Row 2: AI Copilot -->
+          <a href="/#view-copilot" class="left-feat-card">
+            <div class="card-icon-box icon-box-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                <circle cx="12" cy="5" r="2"/>
+                <path d="M12 7v4"/>
+                <line x1="8" y1="16" x2="8.01" y2="16"/>
+                <line x1="16" y1="16" x2="16.01" y2="16"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>AI Copilot <span class="card-arrow">&rarr;</span></h4>
+              <p>Ask questions, get insights, and analyze your data.</p>
+            </div>
+          </a>
+
+          <!-- Row 2: Data Quality -->
+          <a href="/#view-quality" class="left-feat-card">
+            <div class="card-icon-box icon-box-teal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>Data Quality <span class="card-arrow">&rarr;</span></h4>
+              <p>Validate, enrich and ensure reliable data sources.</p>
+            </div>
+          </a>
+
+          <!-- Row 2: Intelligence Briefs -->
+          <a href="/#view-brief" class="left-feat-card">
+            <div class="card-icon-box icon-box-violet">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h4>Intelligence Briefs <span class="card-arrow">&rarr;</span></h4>
+              <p>Generate concise reports and actionable summaries.</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Badge -->
+      <div class="left-bottom-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10 2v7.31L4.1 19.46A2 2 0 0 0 5.8 22h12.4a2 2 0 0 0 1.7-2.54L14 9.31V2"/>
+        </svg>
+        <span>Synthetic Demo Data &bull; Non-Diagnostic</span>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- RIGHT PANEL: Floating Crisp White Login Card            -->
+    <!-- ======================================================== -->
+    <div class="login-right">
+      
+      <div class="login-card">
+        
+        <!-- Brand Header inside Card -->
+        <div class="card-brand-header">
+          <div class="card-brand-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L4 5V11C4 16.5 7.5 21 12 22C16.5 21 20 16.5 20 11V5L12 2Z" fill="url(#shieldCardBrand)" stroke="#00E5FF" stroke-width="1.2"/>
+              <path d="M12 7V17M7 12H17" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="shieldCardBrand" x1="4" y1="2" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0284C7"/>
+                  <stop offset="1" stop-color="#00E5FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="card-brand-text">
+            <h2>AMR Sentinel</h2>
+            <p>Antimicrobial Resistance Surveillance & Early Warning</p>
+          </div>
+        </div>
+
+        <!-- Normal Login View -->
+        <div id="loginFormSection">
+          <div class="card-title-group">
+            <h3>Welcome Back</h3>
+            <p>Sign in to access the surveillance dashboard and analytics platform.</p>
+          </div>
+
+          <div id="loginAlertBox" class="auth-alert-msg" style="margin-top: 14px;"></div>
+
+          <form id="loginForm" onsubmit="handleLoginSubmit(event)" style="display:flex; flex-direction:column; gap:14px; margin-top:14px;">
+            <input type="hidden" id="demoDefaultPwd" value="Abhi@071">
+            <input type="hidden" id="selectedRole" name="selected_role" value="analyst">
+
+            <!-- Select Your Role Section -->
+            <div class="role-selector-container">
+              <label class="form-label" style="display:flex; justify-content:space-between; align-items:center;">
+                <span>Select Your Role</span>
+                <span style="font-size:10.5px; color:#0284C7; font-weight:600;">Verified server-side</span>
+              </label>
+
+              <div class="role-cards-grid" role="radiogroup" aria-label="Select Your Role">
+                <!-- Option 1: Surveillance Analyst -->
+                <div class="role-card active" data-role="analyst" role="radio" aria-checked="true" tabindex="0" onclick="selectRole('analyst')" onkeydown="handleRoleKey(event, 'analyst')">
+                  <div class="role-card-radio">
+                    <div class="radio-indicator"></div>
+                  </div>
+                  <div class="role-card-body">
+                    <div class="role-card-header">
+                      <span class="role-card-icon">📊</span>
+                      <strong class="role-card-title">Surveillance Analyst</strong>
+                    </div>
+                    <p class="role-card-desc">Geographic maps, trends, AST upload, AI copilot &amp; alerts</p>
+                  </div>
+                </div>
+
+                <!-- Option 2: Read-Only Viewer -->
+                <div class="role-card" data-role="viewer" role="radio" aria-checked="false" tabindex="0" onclick="selectRole('viewer')" onkeydown="handleRoleKey(event, 'viewer')">
+                  <div class="role-card-radio">
+                    <div class="radio-indicator"></div>
+                  </div>
+                  <div class="role-card-body">
+                    <div class="role-card-header">
+                      <span class="role-card-icon">👁️</span>
+                      <strong class="role-card-title">Read-Only Viewer</strong>
+                    </div>
+                    <p class="role-card-desc">Read-only surveillance view, resistance maps &amp; reports</p>
+                  </div>
+                </div>
+
+                <!-- Option 3: System Administrator -->
+                <div class="role-card" data-role="admin" role="radio" aria-checked="false" tabindex="0" onclick="selectRole('admin')" onkeydown="handleRoleKey(event, 'admin')">
+                  <div class="role-card-radio">
+                    <div class="radio-indicator"></div>
+                  </div>
+                  <div class="role-card-body">
+                    <div class="role-card-header">
+                      <span class="role-card-icon">🛡️</span>
+                      <strong class="role-card-title">System Administrator</strong>
+                    </div>
+                    <p class="role-card-desc">User accounts, roles, audit logs &amp; system settings</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Fill Test Account helper -->
+              <div style="margin-top: 2px; padding: 6px 9px; background: #F8FAFC; border: 1px dashed #CBD5E1; border-radius: 7px;">
+                <div style="font-size: 10px; font-weight: 700; color: #475569; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between;">
+                  <span>⚡ Quick Select Account:</span>
+                  <span style="color:#64748B; font-weight:500;">Initial temp pwd: Abhi@071</span>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                  <button type="button" class="btn-quick-fill" onclick="quickFillAccount('analyst', 'dvnsabhiram071@gmail.com')">
+                    📊 Analyst
+                  </button>
+                  <button type="button" class="btn-quick-fill" onclick="quickFillAccount('viewer', 'abhichowdary071@gmail.com')">
+                    👁️ Viewer
+                  </button>
+                  <button type="button" class="btn-quick-fill" onclick="quickFillAccount('admin', 'duggineniabhiram170@gmail.com')">
+                    🛡️ Admin
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="loginEmail">Email Address</label>
+              <div class="input-wrapper">
+                <span class="input-prefix-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </span>
+                <input class="form-input" type="email" id="loginEmail" placeholder="Enter your email address" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="loginPassword">Password</label>
+              <div class="input-wrapper">
+                <span class="input-prefix-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+                <input class="form-input" type="password" id="loginPassword" placeholder="Enter your password" required>
+                <button type="button" class="input-suffix-btn" onclick="togglePasswordVisibility('loginPassword', this)" title="Show/Hide Password">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-extra-row">
+              <label class="checkbox-label">
+                <input type="checkbox" id="rememberMe">
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="forgot-link" onclick="handleForgotPassword(event)">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn-submit-signin">
+              <span>Sign In</span>
+              <span>&rarr;</span>
+            </button>
+
+            <div class="or-divider">OR</div>
+
+            <button type="button" class="btn-demo-access" onclick="handleDemoLogin()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span>Try Demo Access</span>
+              <span class="demo-pill-badge">Demo Only</span>
+            </button>
+
+            <a href="/" class="back-home-link">
+              <span>&larr; Back to Home</span>
+            </a>
+          </form>
+        </div>
+
+        <!-- Mandatory First-Login Password Change Form -->
+        <div id="pwdChangeSection">
+          <div class="card-title-group">
+            <h3>Set Permanent Password</h3>
+            <p>You have signed in with an initial temporary credential. System policy requires setting a permanent password before accessing the surveillance platform.</p>
+          </div>
+
+          <div id="pwdChangeAlertBox" class="auth-alert-msg"></div>
+
+          <form id="pwdChangeForm" onsubmit="handlePasswordChangeSubmit(event)" style="display:flex; flex-direction:column; gap:14px; margin-top:8px;">
+            <div class="form-group">
+              <label class="form-label" for="currTempPwd">Current Temporary Password</label>
+              <div class="input-wrapper">
+                <span class="input-prefix-icon">&#128274;</span>
+                <input class="form-input" type="password" id="currTempPwd" required readonly>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="newSecurePwd">New Permanent Password</label>
+              <div class="input-wrapper">
+                <span class="input-prefix-icon">&#128272;</span>
+                <input class="form-input" type="password" id="newSecurePwd" oninput="checkPasswordPolicyLive(this.value)" placeholder="Enter new password" required>
+                <button type="button" class="input-suffix-btn" onclick="togglePasswordVisibility('newSecurePwd', this)">&#128065;</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="confirmSecurePwd">Confirm New Password</label>
+              <div class="input-wrapper">
+                <span class="input-prefix-icon">&#128272;</span>
+                <input class="form-input" type="password" id="confirmSecurePwd" placeholder="Re-type new password" required>
+                <button type="button" class="input-suffix-btn" onclick="togglePasswordVisibility('confirmSecurePwd', this)">&#128065;</button>
+              </div>
+            </div>
+
+            <!-- Password Policy Checklist -->
+            <div class="policy-checklist">
+              <strong style="color:#0F172A; margin-bottom:2px;">Password Policy Requirements:</strong>
+              <div class="policy-item invalid" id="pol-len"><span>&bull;</span> At least 12 characters</div>
+              <div class="policy-item invalid" id="pol-upper"><span>&bull;</span> At least one uppercase letter (A-Z)</div>
+              <div class="policy-item invalid" id="pol-lower"><span>&bull;</span> At least one lowercase letter (a-z)</div>
+              <div class="policy-item invalid" id="pol-num"><span>&bull;</span> At least one number (0-9)</div>
+              <div class="policy-item invalid" id="pol-spec"><span>&bull;</span> At least one special character (!@#$%^&*...)</div>
+            </div>
+
+            <button type="submit" class="btn-submit-signin" style="margin-top:6px;">
+              <span>Set Password & Enter Surveillance</span>
+              <span>&rarr;</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="card-footer-note">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span>Secure Access &bull; Role-based Permissions &bull; Protected System</span>
+        </div>
+
+      </div>
+
+      <!-- Pulse Tagline in Bottom Right (Matching Screenshot 4) -->
+      <div class="bottom-right-tagline">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+        <span>Better Data. Faster Response.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // 1. Render Orbital Glowing India Map
+    (function renderOrbitalIndia() {
+      const g = document.getElementById('orbitalIndiaGroup');
+      if (!g) return;
+      if (window.INDIA_SVG_PATHS) {
+        let paths = '';
+        Object.keys(window.INDIA_SVG_PATHS).forEach(name => {
+          paths += `<path d="${window.INDIA_SVG_PATHS[name]}" fill="rgba(2, 132, 199, 0.45)" stroke="#00E5FF" stroke-width="1.2" opacity="0.85" />`;
+        });
+        g.innerHTML = paths;
+      } else {
+        // Fallback India projection outline
+        g.innerHTML = `<path d="M260,80 L290,120 L310,160 L280,220 L320,260 L340,320 L300,380 L280,480 L250,540 L230,480 L180,420 L160,340 L140,260 L180,200 L210,140 Z" fill="rgba(2, 132, 199, 0.5)" stroke="#00E5FF" stroke-width="1.8"/>`;
+      }
+    })();
+
+    // 2. Toggle Password Visibility
+    function togglePasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>`;
+      } else {
+        input.type = 'password';
+        btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`;
+      }
+    }
+
+    // 3. Live Password Policy Checker
+    function checkPasswordPolicyLive(pwd) {
+      const polLen = document.getElementById('pol-len');
+      const polUpper = document.getElementById('pol-upper');
+      const polLower = document.getElementById('pol-lower');
+      const polNum = document.getElementById('pol-num');
+      const polSpec = document.getElementById('pol-spec');
+
+      const isLen = pwd.length >= 12;
+      const isUpper = /[A-Z]/.test(pwd);
+      const isLower = /[a-z]/.test(pwd);
+      const isNum = /[0-9]/.test(pwd);
+      const isSpec = /[^A-Za-z0-9]/.test(pwd);
+
+      updatePolStatus(polLen, isLen);
+      updatePolStatus(polUpper, isUpper);
+      updatePolStatus(polLower, isLower);
+      updatePolStatus(polNum, isNum);
+      updatePolStatus(polSpec, isSpec);
+
+      return isLen && isUpper && isLower && isNum && isSpec;
+    }
+
+    function updatePolStatus(el, isValid) {
+      if (!el) return;
+      if (isValid) {
+        el.className = 'policy-item valid';
+        el.innerHTML = '<span>&#10003;</span> ' + el.innerText.replace(/^[•✓]\s*/, '');
+      } else {
+        el.className = 'policy-item invalid';
+        el.innerHTML = '<span>&bull;</span> ' + el.innerText.replace(/^[•✓]\s*/, '');
+      }
+    }
+
+    // 4. Alert Helpers
+    function showAlert(boxId, msg, isSuccess) {
+      const box = document.getElementById(boxId);
+      if (!box) return;
+      box.className = 'auth-alert-msg ' + (isSuccess ? 'success' : 'error');
+      box.innerText = msg;
+      box.style.display = 'flex';
+    }
+
+    function hideAlert(boxId) {
+      const box = document.getElementById(boxId);
+      if (box) box.style.display = 'none';
+    }
+
+    // Role Selection Functions
+    function selectRole(role) {
+      const hiddenInput = document.getElementById('selectedRole');
+      if (hiddenInput) hiddenInput.value = role;
+
+      document.querySelectorAll('.role-card').forEach(card => {
+        const isTarget = card.getAttribute('data-role') === role;
+        card.classList.toggle('active', isTarget);
+        card.setAttribute('aria-checked', isTarget ? 'true' : 'false');
+      });
+      hideAlert('loginAlertBox');
+    }
+
+    function handleRoleKey(e, role) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        selectRole(role);
+      }
+    }
+
+    function quickFillAccount(role, email) {
+      selectRole(role);
+      const emailInput = document.getElementById('loginEmail');
+      const pwdInput = document.getElementById('loginPassword');
+      if (emailInput) emailInput.value = email;
+      if (pwdInput) pwdInput.value = 'Abhi@071';
+      hideAlert('loginAlertBox');
+    }
+
+    // 5. Handle Login Submission
+    let currentAuthUserEmail = '';
+    async function handleLoginSubmit(e) {
+      e.preventDefault();
+      hideAlert('loginAlertBox');
+
+      const email = document.getElementById('loginEmail').value.trim();
+      const password = document.getElementById('loginPassword').value;
+      const selectedRole = document.getElementById('selectedRole') ? document.getElementById('selectedRole').value : 'analyst';
+
+      if (!email || !password) {
+        showAlert('loginAlertBox', 'Please enter your email and password.', false);
+        return;
+      }
+
+      currentAuthUserEmail = email;
+
+      try {
+        const resp = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password, selected_role: selectedRole })
+        });
+
+        const data = await resp.json();
+
+        if (!resp.ok) {
+          const errMsg = data.message || data.error || 'Authentication failed. Please verify credentials.';
+          showAlert('loginAlertBox', errMsg, false);
+          return;
+        }
+
+        // Check if mandatory password change is required
+        if (data.must_change_password || data.requires_password_change) {
+          document.getElementById('loginFormSection').style.display = 'none';
+          document.getElementById('pwdChangeSection').style.display = 'flex';
+          document.getElementById('currTempPwd').value = password;
+          showAlert('pwdChangeAlertBox', 'Initial temporary credential verified. System security policy requires setting a compliant permanent password.', true);
+          return;
+        }
+
+        // Successful authentication
+        showAlert('loginAlertBox', 'Authentication successful. Redirecting to surveillance dashboard...', true);
+        setTimeout(() => {
+          window.location.href = data.redirect || '/index.html';
+        }, 500);
+
+      } catch (err) {
+        showAlert('loginAlertBox', 'Connection to authentication service failed. Please retry.', false);
+      }
+    }
+
+    // 6. Handle Password Change Submission
+    async function handlePasswordChangeSubmit(e) {
+      e.preventDefault();
+      hideAlert('pwdChangeAlertBox');
+
+      const currentPassword = document.getElementById('currTempPwd').value;
+      const newPassword = document.getElementById('newSecurePwd').value;
+      const confirmPassword = document.getElementById('confirmSecurePwd').value;
+
+      if (!checkPasswordPolicyLive(newPassword)) {
+        showAlert('pwdChangeAlertBox', 'The new password does not meet all policy requirements.', false);
+        return;
+      }
+
+      if (newPassword !== confirmPassword) {
+        showAlert('pwdChangeAlertBox', 'The password confirmation does not match the new password.', false);
+        return;
+      }
+
+      try {
+        const resp = await fetch('/api/change-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: currentAuthUserEmail,
+            current_password: currentPassword,
+            new_password: newPassword,
+            confirm_password: confirmPassword
+          })
+        });
+
+        const data = await resp.json();
+
+        if (!resp.ok) {
+          showAlert('pwdChangeAlertBox', data.message || data.error || 'Password update failed.', false);
+          return;
+        }
+
+        showAlert('pwdChangeAlertBox', 'Password updated successfully! Entering surveillance platform...', true);
+        setTimeout(() => {
+          window.location.href = data.redirect || '/index.html';
+        }, 800);
+
+      } catch (err) {
+        showAlert('pwdChangeAlertBox', 'Failed to communicate with password service.', false);
+      }
+    }
+
+    // 7. Demo Login Quick Access
+    function handleDemoLogin() {
+      const selectedRole = document.getElementById('selectedRole') ? document.getElementById('selectedRole').value : 'analyst';
+      const roleAccounts = {
+        'analyst': { email: 'dvnsabhiram071@gmail.com', pwd: 'Abhi@071' },
+        'viewer': { email: 'abhichowdary071@gmail.com', pwd: 'Abhi@071' },
+        'admin': { email: 'duggineniabhiram170@gmail.com', pwd: 'Abhi@071' }
+      };
+      const target = roleAccounts[selectedRole] || roleAccounts['analyst'];
+      quickFillAccount(selectedRole, target.email);
+      const form = document.getElementById('loginForm');
+      if (form) {
+        form.dispatchEvent(new Event('submit', { cancelable: true }));
+      }
+    }
+
+    function handleForgotPassword(e) {
+      e.preventDefault();
+      alert('Account password recovery must be initiated through the System Administrator at duggineniabhiram170@gmail.com.');
+    }
+  </script>
+</body>
+</html>

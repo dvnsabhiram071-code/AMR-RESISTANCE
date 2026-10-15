@@ -1,0 +1,801 @@
+isolate_id,sample_date,hospital,department,organism,specimen_type,antimicrobial,susceptibility,patient_age_group,data_source,review_status
+AMR-0001,2025-10-24,Vijayanagara Medical Centre,ICU,Escherichia coli,Wound,Amikacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0002,2025-07-16,Ballari General Hospital,Medicine,Staphylococcus aureus,Other,Linezolid,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0003,2026-05-26,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0004,2026-01-13,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0005,2025-10-16,Kishkinda Teaching Hospital,Oncology,Enterococcus faecium,Wound,Ampicillin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0006,2025-06-17,Vijayanagara Medical Centre,Paediatrics,Klebsiella pneumoniae,Other,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0007,2026-03-13,Vijayanagara Medical Centre,Surgery,Escherichia coli,Other,Meropenem,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0008,2025-11-09,Vijayanagara Medical Centre,Surgery,Pseudomonas aeruginosa,Urine,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0009,2026-05-20,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Other,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0010,2025-02-04,North Karnataka Institute Hospital,Surgery,Escherichia coli,Blood,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0011,2025-02-28,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Blood,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0012,2025-07-17,North Karnataka Institute Hospital,ICU,Escherichia coli,Other,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0013,2025-08-10,Ballari General Hospital,ICU,Escherichia coli,Other,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0014,2026-03-08,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0015,2025-09-02,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0016,2025-05-23,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Urine,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0017,2026-07-30,Ballari General Hospital,Surgery,Enterococcus faecium,Other,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0018,2025-12-13,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0019,2026-04-06,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Wound,Linezolid,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0020,2026-06-30,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Urine,Oxacillin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0021,2025-01-19,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0022,2025-10-08,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0023,2025-10-12,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0024,2026-04-19,North Karnataka Institute Hospital,Medicine,Escherichia coli,Blood,Ceftriaxone,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0025,2026-08-01,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0026,2025-04-03,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Other,Meropenem,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0027,2026-09-12,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Urine,Ceftriaxone,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0028,2025-10-29,Vijayanagara Medical Centre,Oncology,Pseudomonas aeruginosa,Other,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0029,2025-01-31,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0030,2025-08-16,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0031,2025-05-13,Vijayanagara Medical Centre,Medicine,Staphylococcus aureus,Blood,Linezolid,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0032,2026-07-02,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Wound,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0033,2025-06-14,Vijayanagara Medical Centre,Oncology,Acinetobacter baumannii,Urine,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0034,2025-06-27,North Karnataka Institute Hospital,Paediatrics,Pseudomonas aeruginosa,Blood,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0035,2025-07-06,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0036,2026-01-27,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0037,2025-06-22,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0038,2026-03-10,Vijayanagara Medical Centre,Emergency,Pseudomonas aeruginosa,Blood,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0039,2025-07-22,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Respiratory,Clindamycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0040,2025-01-23,Ballari General Hospital,Paediatrics,Klebsiella pneumoniae,Blood,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0041,2025-11-14,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Blood,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0042,2025-09-28,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Blood,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0043,2025-05-15,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Blood,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0044,2026-01-31,North Karnataka Institute Hospital,Surgery,Escherichia coli,Blood,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0045,2026-08-21,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Blood,Amikacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0046,2026-09-19,Ballari General Hospital,Paediatrics,Escherichia coli,Respiratory,Ceftriaxone,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0047,2025-04-24,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Urine,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0048,2026-09-07,Ballari General Hospital,Paediatrics,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0049,2026-05-28,Kishkinda Teaching Hospital,Oncology,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0050,2025-08-11,Ballari General Hospital,Surgery,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0051,2025-06-06,Kishkinda Teaching Hospital,Surgery,Escherichia coli,Blood,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0052,2025-12-24,Vijayanagara Medical Centre,ICU,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0053,2026-02-18,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Blood,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0054,2025-02-06,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Respiratory,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0055,2025-11-02,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Urine,Piperacillin-tazobactam,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0056,2025-06-07,Vijayanagara Medical Centre,Oncology,Escherichia coli,Other,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0057,2025-02-25,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Respiratory,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0058,2026-03-12,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0059,2025-06-01,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Respiratory,Meropenem,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0060,2025-02-22,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Other,Linezolid,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0061,2025-04-29,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0062,2026-01-08,North Karnataka Institute Hospital,Medicine,Staphylococcus aureus,Other,Vancomycin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0063,2026-09-06,Kishkinda Teaching Hospital,Oncology,Staphylococcus aureus,Urine,Oxacillin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0064,2025-02-14,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0065,2025-07-16,Ballari General Hospital,ICU,Enterococcus faecium,Blood,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0066,2025-09-20,Ballari General Hospital,Surgery,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0067,2025-07-30,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Blood,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0068,2025-09-03,Vijayanagara Medical Centre,Surgery,Escherichia coli,Other,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0069,2025-07-17,Kishkinda Teaching Hospital,Oncology,Klebsiella pneumoniae,Other,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0070,2025-07-05,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Other,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0071,2025-03-23,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Blood,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0072,2025-09-11,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Other,Meropenem,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0073,2026-07-22,Vijayanagara Medical Centre,ICU,Enterococcus faecium,Other,Linezolid,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0074,2026-02-16,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Respiratory,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0075,2026-01-10,Vijayanagara Medical Centre,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0076,2026-03-07,Kishkinda Teaching Hospital,Emergency,Klebsiella pneumoniae,Blood,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0077,2026-08-09,Ballari General Hospital,Emergency,Pseudomonas aeruginosa,Other,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0078,2025-07-26,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Wound,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0079,2025-03-19,Ballari General Hospital,Paediatrics,Pseudomonas aeruginosa,Blood,Meropenem,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0080,2026-01-29,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0081,2025-06-10,North Karnataka Institute Hospital,Emergency,Staphylococcus aureus,Urine,Linezolid,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0082,2026-03-15,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0083,2026-07-24,Ballari General Hospital,Emergency,Acinetobacter baumannii,Urine,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0084,2025-04-14,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0085,2025-11-02,Ballari General Hospital,Oncology,Staphylococcus aureus,Blood,Clindamycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0086,2026-09-29,Ballari General Hospital,ICU,Klebsiella pneumoniae,Other,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0087,2025-03-22,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Urine,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0088,2025-11-23,Ballari General Hospital,Emergency,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0089,2025-06-03,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0090,2026-08-29,Vijayanagara Medical Centre,Emergency,Enterococcus faecium,Other,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0091,2026-09-23,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Other,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0092,2025-01-15,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Other,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0093,2026-03-20,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Wound,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0094,2025-09-20,Ballari General Hospital,Medicine,Enterococcus faecium,Wound,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0095,2025-08-26,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Urine,Meropenem,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0096,2026-02-25,Ballari General Hospital,Surgery,Enterococcus faecium,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0097,2025-01-23,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0098,2025-10-15,North Karnataka Institute Hospital,Surgery,Escherichia coli,Wound,Amikacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0099,2026-04-20,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0100,2025-03-17,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Blood,Clindamycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0101,2025-04-30,Ballari General Hospital,Emergency,Acinetobacter baumannii,Other,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0102,2025-05-09,Vijayanagara Medical Centre,Paediatrics,Klebsiella pneumoniae,Other,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0103,2026-03-26,Ballari General Hospital,Paediatrics,Enterococcus faecium,Urine,Ampicillin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0104,2026-07-01,Ballari General Hospital,Paediatrics,Enterococcus faecium,Other,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0105,2026-03-25,Kishkinda Teaching Hospital,Medicine,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0106,2026-04-13,Ballari General Hospital,ICU,Klebsiella pneumoniae,Urine,Amikacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0107,2026-05-19,North Karnataka Institute Hospital,ICU,Escherichia coli,Respiratory,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0108,2026-09-15,Vijayanagara Medical Centre,ICU,Enterococcus faecium,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0109,2025-03-14,North Karnataka Institute Hospital,Oncology,Escherichia coli,Wound,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0110,2025-07-08,Ballari General Hospital,Emergency,Acinetobacter baumannii,Respiratory,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0111,2025-11-01,Vijayanagara Medical Centre,Surgery,Escherichia coli,Respiratory,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0112,2026-08-25,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Blood,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0113,2025-08-31,Ballari General Hospital,Emergency,Enterococcus faecium,Other,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0114,2025-02-16,Kishkinda Teaching Hospital,ICU,Escherichia coli,Urine,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0115,2025-09-03,North Karnataka Institute Hospital,Medicine,Escherichia coli,Blood,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0116,2026-08-11,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0117,2025-03-17,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Other,Oxacillin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0118,2026-02-26,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Urine,Clindamycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0119,2025-08-26,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Other,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0120,2025-05-27,Kishkinda Teaching Hospital,Oncology,Enterococcus faecium,Urine,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0121,2026-01-14,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Wound,Amikacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0122,2025-12-23,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0123,2025-01-16,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0124,2026-06-14,Ballari General Hospital,Surgery,Staphylococcus aureus,Blood,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0125,2025-06-04,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0126,2025-08-10,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Blood,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0127,2025-10-14,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0128,2025-07-02,Ballari General Hospital,Surgery,Enterococcus faecium,Urine,Ampicillin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0129,2025-01-17,Ballari General Hospital,ICU,Enterococcus faecium,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0130,2025-10-01,North Karnataka Institute Hospital,Oncology,Escherichia coli,Wound,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0131,2025-04-28,Ballari General Hospital,Medicine,Enterococcus faecium,Other,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0132,2025-10-28,Ballari General Hospital,Medicine,Escherichia coli,Respiratory,Piperacillin-tazobactam,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0133,2026-05-05,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Blood,Meropenem,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0134,2026-01-19,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0135,2026-06-10,Ballari General Hospital,Surgery,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0136,2025-04-11,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0137,2025-06-01,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Respiratory,Vancomycin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0138,2026-07-13,Ballari General Hospital,Paediatrics,Escherichia coli,Wound,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0139,2025-06-30,Ballari General Hospital,Emergency,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0140,2026-03-21,North Karnataka Institute Hospital,ICU,Staphylococcus aureus,Wound,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0141,2025-10-19,Kishkinda Teaching Hospital,Surgery,Escherichia coli,Blood,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0142,2026-09-06,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0143,2025-02-03,Kishkinda Teaching Hospital,Emergency,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0144,2025-10-31,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Other,Ampicillin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0145,2025-04-30,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Blood,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0146,2025-05-22,Ballari General Hospital,Medicine,Escherichia coli,Wound,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0147,2025-08-08,Vijayanagara Medical Centre,ICU,Escherichia coli,Other,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0148,2025-01-26,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Wound,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0149,2026-01-31,Ballari General Hospital,Emergency,Acinetobacter baumannii,Respiratory,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0150,2026-02-20,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0151,2025-01-27,Kishkinda Teaching Hospital,Surgery,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0152,2025-12-21,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Wound,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0153,2025-09-07,Kishkinda Teaching Hospital,ICU,Escherichia coli,Blood,Meropenem,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0154,2026-06-02,Vijayanagara Medical Centre,Medicine,Pseudomonas aeruginosa,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0155,2026-06-17,Kishkinda Teaching Hospital,ICU,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0156,2026-09-10,North Karnataka Institute Hospital,Emergency,Staphylococcus aureus,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0157,2025-10-06,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0158,2025-05-09,Ballari General Hospital,ICU,Enterococcus faecium,Urine,Vancomycin,Intermediate,65+,Synthetic demo dataset,Pending
+AMR-0159,2025-11-02,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Urine,Meropenem,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0160,2025-02-27,Ballari General Hospital,Medicine,Staphylococcus aureus,Urine,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0161,2026-04-18,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Other,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0162,2025-12-24,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Other,Amikacin,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0163,2026-05-16,North Karnataka Institute Hospital,Surgery,Pseudomonas aeruginosa,Wound,Meropenem,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0164,2026-03-27,Ballari General Hospital,Surgery,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0165,2026-05-08,Ballari General Hospital,Surgery,Enterococcus faecium,Blood,Linezolid,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0166,2026-06-20,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0167,2025-04-08,Ballari General Hospital,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0168,2025-03-23,Ballari General Hospital,Surgery,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0169,2025-01-20,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0170,2025-09-14,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Blood,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0171,2026-05-05,North Karnataka Institute Hospital,Paediatrics,Enterococcus faecium,Wound,Ampicillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0172,2025-02-20,North Karnataka Institute Hospital,ICU,Staphylococcus aureus,Other,Clindamycin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0173,2026-08-27,North Karnataka Institute Hospital,ICU,Enterococcus faecium,Blood,Linezolid,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0174,2026-09-12,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Blood,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0175,2025-11-11,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0176,2025-12-03,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Wound,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0177,2025-12-19,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0178,2025-05-25,Vijayanagara Medical Centre,Medicine,Pseudomonas aeruginosa,Blood,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0179,2026-02-14,Ballari General Hospital,ICU,Enterococcus faecium,Urine,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0180,2026-08-16,Ballari General Hospital,Surgery,Enterococcus faecium,Blood,Ampicillin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0181,2025-03-16,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Urine,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0182,2026-05-24,Ballari General Hospital,Oncology,Staphylococcus aureus,Other,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0183,2025-06-22,Vijayanagara Medical Centre,Paediatrics,Acinetobacter baumannii,Other,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0184,2025-07-01,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0185,2025-12-07,Kishkinda Teaching Hospital,Surgery,Pseudomonas aeruginosa,Wound,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0186,2025-06-16,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Blood,Clindamycin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0187,2026-01-23,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Blood,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0188,2026-06-23,Ballari General Hospital,Medicine,Acinetobacter baumannii,Blood,Meropenem,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0189,2025-12-18,Ballari General Hospital,Oncology,Acinetobacter baumannii,Blood,Ciprofloxacin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0190,2025-03-19,Ballari General Hospital,ICU,Staphylococcus aureus,Respiratory,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0191,2025-06-08,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Respiratory,Ceftazidime,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0192,2025-05-09,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Other,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0193,2025-08-23,Vijayanagara Medical Centre,Surgery,Escherichia coli,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0194,2025-01-18,Ballari General Hospital,Paediatrics,Staphylococcus aureus,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0195,2025-12-24,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Respiratory,Amikacin,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0196,2025-08-14,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Urine,Meropenem,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0197,2026-03-29,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Urine,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0198,2026-01-06,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Urine,Piperacillin-tazobactam,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0199,2026-02-14,North Karnataka Institute Hospital,ICU,Staphylococcus aureus,Wound,Clindamycin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0200,2026-08-13,North Karnataka Institute Hospital,Oncology,Enterococcus faecium,Wound,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0201,2025-04-20,Ballari General Hospital,Medicine,Escherichia coli,Wound,Amikacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0202,2026-01-19,Ballari General Hospital,Paediatrics,Klebsiella pneumoniae,Blood,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0203,2025-03-16,Kishkinda Teaching Hospital,Surgery,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0204,2025-11-01,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Wound,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0205,2026-03-19,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Blood,Meropenem,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0206,2025-01-10,Vijayanagara Medical Centre,Oncology,Enterococcus faecium,Wound,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0207,2025-07-03,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Respiratory,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0208,2025-11-11,Kishkinda Teaching Hospital,Paediatrics,Klebsiella pneumoniae,Blood,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0209,2026-04-17,Ballari General Hospital,Emergency,Enterococcus faecium,Urine,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0210,2026-03-01,Vijayanagara Medical Centre,Paediatrics,Escherichia coli,Wound,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0211,2026-05-07,Vijayanagara Medical Centre,ICU,Enterococcus faecium,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0212,2026-09-24,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Wound,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0213,2025-10-13,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0214,2026-02-01,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0215,2025-10-04,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0216,2025-12-09,Ballari General Hospital,Surgery,Acinetobacter baumannii,Urine,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0217,2026-06-28,Vijayanagara Medical Centre,Surgery,Pseudomonas aeruginosa,Other,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0218,2026-02-05,Ballari General Hospital,Surgery,Klebsiella pneumoniae,Other,Meropenem,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0219,2026-08-21,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Wound,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0220,2025-07-30,Ballari General Hospital,Emergency,Enterococcus faecium,Blood,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0221,2026-09-27,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Urine,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0222,2025-11-07,Vijayanagara Medical Centre,Surgery,Staphylococcus aureus,Other,Clindamycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0223,2025-10-05,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Blood,Oxacillin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0224,2025-12-06,Ballari General Hospital,Surgery,Pseudomonas aeruginosa,Blood,Ceftazidime,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0225,2025-09-22,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Urine,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0226,2025-09-28,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0227,2025-06-11,Vijayanagara Medical Centre,Emergency,Pseudomonas aeruginosa,Blood,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0228,2025-06-02,Vijayanagara Medical Centre,Paediatrics,Escherichia coli,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0229,2025-07-13,Ballari General Hospital,ICU,Klebsiella pneumoniae,Respiratory,Meropenem,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0230,2025-06-03,Ballari General Hospital,Surgery,Staphylococcus aureus,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0231,2025-08-18,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Other,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0232,2025-02-15,North Karnataka Institute Hospital,ICU,Enterococcus faecium,Respiratory,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0233,2026-09-13,North Karnataka Institute Hospital,Medicine,Escherichia coli,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0234,2025-11-20,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Urine,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0235,2026-05-05,Vijayanagara Medical Centre,Surgery,Pseudomonas aeruginosa,Respiratory,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0236,2025-01-22,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0237,2025-03-27,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0238,2026-02-17,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Blood,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0239,2025-08-13,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Respiratory,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0240,2026-04-10,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Blood,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0241,2026-07-07,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Respiratory,Oxacillin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0242,2026-06-27,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Respiratory,Clindamycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0243,2025-12-14,North Karnataka Institute Hospital,Medicine,Escherichia coli,Wound,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0244,2026-07-20,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Wound,Meropenem,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0245,2025-08-01,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Other,Oxacillin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0246,2026-01-21,Ballari General Hospital,ICU,Klebsiella pneumoniae,Urine,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0247,2025-08-18,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Urine,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0248,2025-06-19,Kishkinda Teaching Hospital,Medicine,Escherichia coli,Wound,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0249,2026-08-27,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Urine,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0250,2025-03-16,Ballari General Hospital,Emergency,Pseudomonas aeruginosa,Other,Amikacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0251,2025-07-28,Vijayanagara Medical Centre,ICU,Escherichia coli,Blood,Amikacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0252,2025-09-14,Kishkinda Teaching Hospital,Emergency,Escherichia coli,Other,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0253,2026-08-29,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Wound,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0254,2026-05-26,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0255,2025-08-05,Ballari General Hospital,Surgery,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0256,2025-04-11,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0257,2026-06-15,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0258,2025-11-11,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Other,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0259,2025-03-02,Ballari General Hospital,Medicine,Staphylococcus aureus,Other,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0260,2026-09-10,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0261,2025-08-29,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Other,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0262,2026-09-27,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Wound,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0263,2026-02-11,Kishkinda Teaching Hospital,Surgery,Pseudomonas aeruginosa,Blood,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0264,2026-03-18,Ballari General Hospital,ICU,Enterococcus faecium,Blood,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0265,2026-05-18,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0266,2025-06-28,Vijayanagara Medical Centre,Oncology,Escherichia coli,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0267,2026-07-13,Kishkinda Teaching Hospital,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0268,2026-09-15,Vijayanagara Medical Centre,ICU,Escherichia coli,Blood,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0269,2025-06-29,Kishkinda Teaching Hospital,Oncology,Acinetobacter baumannii,Respiratory,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0270,2026-02-23,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0271,2026-05-27,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Wound,Ceftazidime,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0272,2025-02-22,Kishkinda Teaching Hospital,ICU,Escherichia coli,Wound,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0273,2025-05-17,Ballari General Hospital,ICU,Escherichia coli,Blood,Amikacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0274,2025-07-28,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Wound,Ampicillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0275,2025-02-06,Vijayanagara Medical Centre,Paediatrics,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0276,2026-01-03,Ballari General Hospital,Medicine,Enterococcus faecium,Other,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0277,2026-05-06,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0278,2025-03-31,Ballari General Hospital,Medicine,Staphylococcus aureus,Respiratory,Oxacillin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0279,2025-12-04,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Blood,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0280,2025-03-09,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Blood,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0281,2026-05-21,Vijayanagara Medical Centre,Emergency,Klebsiella pneumoniae,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0282,2026-05-23,North Karnataka Institute Hospital,Paediatrics,Staphylococcus aureus,Other,Clindamycin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0283,2025-04-30,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Wound,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0284,2025-08-05,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Wound,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0285,2025-06-15,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Wound,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0286,2025-08-30,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0287,2025-12-22,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Urine,Meropenem,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0288,2025-07-25,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Blood,Vancomycin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0289,2025-09-14,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0290,2025-02-17,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Respiratory,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0291,2025-07-28,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Wound,Ampicillin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0292,2025-03-22,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0293,2026-02-25,Kishkinda Teaching Hospital,Emergency,Enterococcus faecium,Blood,Linezolid,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0294,2025-06-05,Vijayanagara Medical Centre,Surgery,Enterococcus faecium,Other,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0295,2026-01-18,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Urine,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0296,2025-06-30,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0297,2025-10-31,North Karnataka Institute Hospital,Oncology,Escherichia coli,Respiratory,Meropenem,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0298,2025-01-19,North Karnataka Institute Hospital,Emergency,Escherichia coli,Wound,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0299,2026-06-27,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Blood,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0300,2026-05-23,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0301,2025-09-24,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Respiratory,Amikacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0302,2025-04-19,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Urine,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0303,2025-07-12,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Urine,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0304,2026-03-08,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Other,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0305,2025-06-22,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Wound,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0306,2025-03-15,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Wound,Ampicillin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0307,2025-09-03,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Other,Meropenem,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0308,2025-03-30,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Urine,Ampicillin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0309,2025-07-27,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Blood,Oxacillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0310,2026-02-25,North Karnataka Institute Hospital,Medicine,Escherichia coli,Other,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0311,2026-08-12,Kishkinda Teaching Hospital,Emergency,Klebsiella pneumoniae,Respiratory,Meropenem,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0312,2025-10-06,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Blood,Clindamycin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0313,2025-05-10,Ballari General Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0314,2026-03-03,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0315,2026-07-06,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Urine,Ceftriaxone,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0316,2026-03-19,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0317,2026-04-23,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Blood,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0318,2026-05-16,Ballari General Hospital,Oncology,Acinetobacter baumannii,Blood,Meropenem,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0319,2026-08-19,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Other,Oxacillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0320,2025-03-27,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0321,2025-06-09,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Wound,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0322,2026-03-24,Vijayanagara Medical Centre,Oncology,Acinetobacter baumannii,Urine,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0323,2025-08-01,Vijayanagara Medical Centre,Oncology,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0324,2026-09-01,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Urine,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0325,2026-01-06,Kishkinda Teaching Hospital,Oncology,Acinetobacter baumannii,Other,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0326,2025-12-22,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Blood,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0327,2026-05-21,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0328,2025-07-16,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Blood,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0329,2025-12-17,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Respiratory,Meropenem,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0330,2025-05-16,Ballari General Hospital,Medicine,Escherichia coli,Wound,Amikacin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0331,2026-06-20,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Blood,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0332,2025-12-09,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0333,2026-06-17,Kishkinda Teaching Hospital,Emergency,Escherichia coli,Blood,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0334,2026-09-23,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0335,2026-06-22,Ballari General Hospital,Paediatrics,Escherichia coli,Blood,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0336,2026-03-24,Vijayanagara Medical Centre,Surgery,Escherichia coli,Other,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0337,2025-12-01,North Karnataka Institute Hospital,Paediatrics,Pseudomonas aeruginosa,Urine,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0338,2025-05-25,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0339,2026-03-22,Kishkinda Teaching Hospital,Surgery,Escherichia coli,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0340,2025-12-10,North Karnataka Institute Hospital,ICU,Escherichia coli,Respiratory,Meropenem,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0341,2025-07-27,Vijayanagara Medical Centre,Paediatrics,Klebsiella pneumoniae,Wound,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0342,2026-06-18,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Other,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0343,2026-09-17,Ballari General Hospital,ICU,Klebsiella pneumoniae,Other,Ceftriaxone,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0344,2025-11-11,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Urine,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0345,2025-06-18,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0346,2025-10-02,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Urine,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0347,2025-02-04,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Wound,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0348,2025-02-11,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Blood,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0349,2025-06-16,Vijayanagara Medical Centre,Medicine,Staphylococcus aureus,Blood,Clindamycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0350,2025-06-11,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Wound,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0351,2026-07-23,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Amikacin,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0352,2026-03-05,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Urine,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0353,2026-04-29,Ballari General Hospital,Medicine,Acinetobacter baumannii,Urine,Ceftazidime,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0354,2025-10-08,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Urine,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0355,2026-09-13,Ballari General Hospital,Medicine,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0356,2026-06-05,Ballari General Hospital,ICU,Escherichia coli,Urine,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0357,2026-07-24,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Urine,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0358,2025-08-22,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Wound,Amikacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0359,2025-02-15,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Urine,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0360,2025-09-11,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Respiratory,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0361,2025-10-06,North Karnataka Institute Hospital,Surgery,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0362,2025-02-08,North Karnataka Institute Hospital,ICU,Enterococcus faecium,Other,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0363,2025-09-26,Kishkinda Teaching Hospital,Emergency,Enterococcus faecium,Wound,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0364,2025-05-21,Vijayanagara Medical Centre,Surgery,Staphylococcus aureus,Other,Clindamycin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0365,2025-01-16,Vijayanagara Medical Centre,Oncology,Enterococcus faecium,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0366,2025-08-23,North Karnataka Institute Hospital,Emergency,Enterococcus faecium,Respiratory,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0367,2025-11-19,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0368,2026-09-18,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Wound,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0369,2025-09-11,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Respiratory,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0370,2026-04-27,Ballari General Hospital,ICU,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0371,2025-07-27,Ballari General Hospital,ICU,Staphylococcus aureus,Urine,Oxacillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0372,2025-09-24,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0373,2026-01-07,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0374,2025-08-10,North Karnataka Institute Hospital,Emergency,Enterococcus faecium,Blood,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0375,2026-09-20,North Karnataka Institute Hospital,Emergency,Escherichia coli,Respiratory,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0376,2025-02-08,Kishkinda Teaching Hospital,ICU,Escherichia coli,Respiratory,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0377,2025-07-18,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0378,2025-06-08,Ballari General Hospital,Emergency,Acinetobacter baumannii,Other,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0379,2026-02-07,North Karnataka Institute Hospital,ICU,Escherichia coli,Respiratory,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0380,2026-08-11,Ballari General Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0381,2026-03-26,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0382,2026-01-04,North Karnataka Institute Hospital,Emergency,Staphylococcus aureus,Blood,Oxacillin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0383,2026-05-18,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Wound,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0384,2026-04-25,Vijayanagara Medical Centre,Surgery,Staphylococcus aureus,Urine,Oxacillin,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0385,2026-05-25,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Wound,Linezolid,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0386,2026-02-05,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Respiratory,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0387,2025-01-14,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Other,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0388,2025-03-12,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Blood,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0389,2025-08-24,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Respiratory,Ceftazidime,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0390,2025-07-23,North Karnataka Institute Hospital,Emergency,Escherichia coli,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0391,2026-06-18,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Urine,Amikacin,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0392,2025-07-29,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Blood,Amikacin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0393,2025-01-30,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Wound,Linezolid,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0394,2025-03-22,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Respiratory,Clindamycin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0395,2026-04-19,North Karnataka Institute Hospital,Medicine,Escherichia coli,Respiratory,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0396,2026-03-01,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Blood,Linezolid,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0397,2026-02-13,Vijayanagara Medical Centre,Medicine,Pseudomonas aeruginosa,Wound,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0398,2025-12-29,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0399,2025-12-09,Kishkinda Teaching Hospital,ICU,Escherichia coli,Blood,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0400,2025-08-02,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0401,2025-03-12,Vijayanagara Medical Centre,Oncology,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0402,2025-09-04,Ballari General Hospital,Surgery,Escherichia coli,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0403,2025-01-16,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0404,2025-12-18,North Karnataka Institute Hospital,Paediatrics,Escherichia coli,Respiratory,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0405,2025-07-01,Ballari General Hospital,Oncology,Escherichia coli,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0406,2026-08-20,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Wound,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0407,2026-03-01,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Urine,Amikacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0408,2025-03-05,Kishkinda Teaching Hospital,Paediatrics,Enterococcus faecium,Urine,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0409,2025-03-07,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0410,2026-04-29,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Other,Clindamycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0411,2025-06-04,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Wound,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0412,2025-05-14,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Urine,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0413,2026-02-01,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0414,2026-01-27,Ballari General Hospital,Oncology,Acinetobacter baumannii,Urine,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0415,2025-09-21,Ballari General Hospital,Paediatrics,Pseudomonas aeruginosa,Respiratory,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0416,2026-10-01,Ballari General Hospital,Oncology,Enterococcus faecium,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0417,2025-05-11,Ballari General Hospital,Oncology,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0418,2026-01-13,Vijayanagara Medical Centre,Medicine,Acinetobacter baumannii,Wound,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0419,2025-03-22,Ballari General Hospital,Medicine,Staphylococcus aureus,Urine,Clindamycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0420,2025-11-14,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Urine,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0421,2025-03-31,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Other,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0422,2025-01-26,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Other,Clindamycin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0423,2025-01-09,North Karnataka Institute Hospital,ICU,Escherichia coli,Urine,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0424,2025-11-12,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Other,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0425,2025-06-28,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Respiratory,Ampicillin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0426,2025-03-03,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0427,2026-09-14,North Karnataka Institute Hospital,Emergency,Staphylococcus aureus,Urine,Oxacillin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0428,2026-07-21,North Karnataka Institute Hospital,Paediatrics,Pseudomonas aeruginosa,Other,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0429,2026-09-21,Ballari General Hospital,Emergency,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0430,2025-03-17,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Blood,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0431,2025-08-09,Ballari General Hospital,Surgery,Enterococcus faecium,Blood,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0432,2025-09-19,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Other,Linezolid,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0433,2025-02-26,Vijayanagara Medical Centre,Medicine,Pseudomonas aeruginosa,Other,Piperacillin-tazobactam,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0434,2025-01-29,North Karnataka Institute Hospital,Oncology,Escherichia coli,Blood,Meropenem,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0435,2026-07-13,Vijayanagara Medical Centre,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0436,2026-09-19,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Wound,Ceftazidime,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0437,2025-04-17,North Karnataka Institute Hospital,Surgery,Klebsiella pneumoniae,Urine,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0438,2026-03-23,Vijayanagara Medical Centre,ICU,Escherichia coli,Wound,Ceftriaxone,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0439,2026-03-22,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0440,2025-10-25,North Karnataka Institute Hospital,Surgery,Acinetobacter baumannii,Other,Meropenem,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0441,2025-08-19,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Blood,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0442,2025-03-18,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Other,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0443,2025-09-28,North Karnataka Institute Hospital,Medicine,Escherichia coli,Wound,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0444,2025-08-17,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0445,2026-03-19,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Wound,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0446,2026-06-01,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Urine,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0447,2025-03-12,Vijayanagara Medical Centre,Oncology,Pseudomonas aeruginosa,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0448,2026-01-02,Vijayanagara Medical Centre,Oncology,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0449,2025-05-13,Kishkinda Teaching Hospital,Paediatrics,Enterococcus faecium,Other,Vancomycin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0450,2025-07-21,Ballari General Hospital,Surgery,Enterococcus faecium,Other,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0451,2026-02-14,Ballari General Hospital,Oncology,Escherichia coli,Other,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0452,2025-03-25,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Blood,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0453,2025-04-22,Kishkinda Teaching Hospital,Paediatrics,Escherichia coli,Urine,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0454,2025-05-22,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Respiratory,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0455,2025-12-12,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Urine,Meropenem,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0456,2025-04-13,Vijayanagara Medical Centre,Oncology,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0457,2025-03-19,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Wound,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0458,2025-03-05,Vijayanagara Medical Centre,Paediatrics,Escherichia coli,Respiratory,Meropenem,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0459,2026-01-01,Ballari General Hospital,Oncology,Enterococcus faecium,Urine,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0460,2025-10-08,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0461,2026-09-14,Ballari General Hospital,Emergency,Escherichia coli,Urine,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0462,2025-06-12,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Other,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0463,2025-08-31,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Other,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0464,2026-02-02,Ballari General Hospital,ICU,Enterococcus faecium,Urine,Ampicillin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0465,2025-09-15,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Wound,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0466,2026-07-19,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Blood,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0467,2026-10-02,North Karnataka Institute Hospital,Medicine,Staphylococcus aureus,Wound,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0468,2025-10-09,Ballari General Hospital,Oncology,Acinetobacter baumannii,Other,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0469,2026-08-26,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0470,2026-03-22,North Karnataka Institute Hospital,Medicine,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0471,2025-12-05,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Blood,Ceftazidime,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0472,2026-01-25,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Other,Amikacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0473,2025-11-07,Ballari General Hospital,Paediatrics,Staphylococcus aureus,Wound,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0474,2025-10-08,North Karnataka Institute Hospital,Medicine,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0475,2026-01-21,Kishkinda Teaching Hospital,Oncology,Enterococcus faecium,Other,Linezolid,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0476,2025-04-04,Ballari General Hospital,Oncology,Enterococcus faecium,Respiratory,Linezolid,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0477,2025-04-13,Vijayanagara Medical Centre,Medicine,Acinetobacter baumannii,Wound,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0478,2026-04-19,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0479,2025-09-06,Vijayanagara Medical Centre,Paediatrics,Pseudomonas aeruginosa,Blood,Ceftazidime,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0480,2025-07-28,Ballari General Hospital,Medicine,Staphylococcus aureus,Wound,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0481,2025-09-05,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Wound,Amikacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0482,2025-04-05,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Respiratory,Oxacillin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0483,2025-04-16,Ballari General Hospital,Paediatrics,Enterococcus faecium,Blood,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0484,2026-08-18,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0485,2026-02-09,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0486,2026-10-02,North Karnataka Institute Hospital,Surgery,Escherichia coli,Respiratory,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0487,2025-07-27,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Other,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0488,2025-03-10,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0489,2025-12-13,Ballari General Hospital,Oncology,Escherichia coli,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0490,2026-03-12,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Other,Amikacin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0491,2026-05-06,Ballari General Hospital,Emergency,Staphylococcus aureus,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0492,2026-01-26,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Blood,Ceftriaxone,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0493,2025-11-07,North Karnataka Institute Hospital,Paediatrics,Staphylococcus aureus,Wound,Clindamycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0494,2025-06-13,Ballari General Hospital,Oncology,Staphylococcus aureus,Other,Vancomycin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0495,2025-08-27,North Karnataka Institute Hospital,Paediatrics,Staphylococcus aureus,Urine,Clindamycin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0496,2025-11-26,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0497,2025-09-28,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Other,Clindamycin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0498,2025-03-12,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0499,2026-05-29,North Karnataka Institute Hospital,Medicine,Escherichia coli,Urine,Meropenem,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0500,2026-06-09,Ballari General Hospital,Paediatrics,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0501,2025-07-08,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0502,2026-02-26,Vijayanagara Medical Centre,Oncology,Staphylococcus aureus,Respiratory,Clindamycin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0503,2025-08-21,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0504,2026-05-06,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Urine,Vancomycin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0505,2025-08-14,Ballari General Hospital,ICU,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0506,2026-05-17,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Amikacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0507,2025-03-26,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Respiratory,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0508,2025-12-21,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Urine,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0509,2025-08-14,Vijayanagara Medical Centre,Emergency,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0510,2026-08-27,Kishkinda Teaching Hospital,Oncology,Staphylococcus aureus,Blood,Clindamycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0511,2026-01-06,Ballari General Hospital,Emergency,Acinetobacter baumannii,Wound,Meropenem,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0512,2026-07-26,Vijayanagara Medical Centre,ICU,Enterococcus faecium,Urine,Ampicillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0513,2026-06-09,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Urine,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0514,2026-04-21,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0515,2025-05-29,Ballari General Hospital,Surgery,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0516,2025-08-10,Vijayanagara Medical Centre,Medicine,Escherichia coli,Urine,Meropenem,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0517,2026-09-14,North Karnataka Institute Hospital,Paediatrics,Staphylococcus aureus,Other,Clindamycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0518,2026-03-23,Vijayanagara Medical Centre,Oncology,Staphylococcus aureus,Wound,Clindamycin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0519,2026-06-27,Vijayanagara Medical Centre,Paediatrics,Pseudomonas aeruginosa,Urine,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0520,2026-02-02,North Karnataka Institute Hospital,ICU,Enterococcus faecium,Blood,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0521,2026-01-23,Ballari General Hospital,Oncology,Klebsiella pneumoniae,Urine,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0522,2026-06-16,Vijayanagara Medical Centre,Paediatrics,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0523,2025-03-11,Vijayanagara Medical Centre,Surgery,Staphylococcus aureus,Wound,Vancomycin,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0524,2026-03-03,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Urine,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0525,2026-10-01,North Karnataka Institute Hospital,Medicine,Escherichia coli,Wound,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0526,2025-10-13,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Meropenem,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0527,2025-11-02,North Karnataka Institute Hospital,Oncology,Enterococcus faecium,Other,Linezolid,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0528,2026-04-07,Ballari General Hospital,Paediatrics,Pseudomonas aeruginosa,Wound,Amikacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0529,2025-07-28,North Karnataka Institute Hospital,ICU,Staphylococcus aureus,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0530,2026-02-16,Ballari General Hospital,ICU,Enterococcus faecium,Urine,Linezolid,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0531,2026-08-02,Ballari General Hospital,Surgery,Staphylococcus aureus,Urine,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0532,2025-07-23,Ballari General Hospital,ICU,Enterococcus faecium,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0533,2025-03-01,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Blood,Amikacin,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0534,2026-09-19,North Karnataka Institute Hospital,Oncology,Enterococcus faecium,Wound,Linezolid,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0535,2026-09-28,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Respiratory,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0536,2025-11-17,Kishkinda Teaching Hospital,Medicine,Escherichia coli,Blood,Ceftriaxone,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0537,2025-09-10,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0538,2025-09-21,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Other,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0539,2026-04-19,North Karnataka Institute Hospital,Medicine,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0540,2025-01-16,Vijayanagara Medical Centre,Surgery,Pseudomonas aeruginosa,Wound,Meropenem,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0541,2025-03-14,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Blood,Ceftazidime,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0542,2026-01-18,Kishkinda Teaching Hospital,Medicine,Staphylococcus aureus,Urine,Clindamycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0543,2025-04-10,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Respiratory,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0544,2026-09-11,Ballari General Hospital,ICU,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0545,2025-06-17,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Wound,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0546,2025-08-20,North Karnataka Institute Hospital,Medicine,Klebsiella pneumoniae,Respiratory,Piperacillin-tazobactam,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0547,2026-08-19,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Wound,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0548,2026-01-15,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0549,2026-01-30,Kishkinda Teaching Hospital,Paediatrics,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0550,2025-09-10,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0551,2025-09-16,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Blood,Meropenem,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0552,2025-09-30,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Respiratory,Linezolid,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0553,2026-09-24,Kishkinda Teaching Hospital,ICU,Escherichia coli,Blood,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0554,2026-01-16,Kishkinda Teaching Hospital,Paediatrics,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0555,2025-12-01,Ballari General Hospital,Oncology,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0556,2025-01-13,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Wound,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0557,2025-01-04,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Respiratory,Amikacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0558,2025-01-16,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Respiratory,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0559,2026-02-13,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Other,Meropenem,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0560,2026-03-21,Vijayanagara Medical Centre,ICU,Escherichia coli,Blood,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0561,2025-10-08,Ballari General Hospital,Paediatrics,Enterococcus faecium,Blood,Linezolid,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0562,2025-02-14,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0563,2025-07-21,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0564,2026-03-09,Kishkinda Teaching Hospital,Paediatrics,Acinetobacter baumannii,Urine,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0565,2025-08-29,Kishkinda Teaching Hospital,Oncology,Escherichia coli,Other,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0566,2025-09-04,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Blood,Meropenem,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0567,2025-06-08,Ballari General Hospital,Surgery,Staphylococcus aureus,Blood,Linezolid,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0568,2025-01-19,Vijayanagara Medical Centre,Emergency,Escherichia coli,Respiratory,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0569,2026-05-03,Ballari General Hospital,Medicine,Enterococcus faecium,Respiratory,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0570,2026-05-01,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Wound,Amikacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0571,2025-06-12,Vijayanagara Medical Centre,Medicine,Pseudomonas aeruginosa,Urine,Ceftazidime,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0572,2025-02-06,North Karnataka Institute Hospital,Medicine,Escherichia coli,Blood,Meropenem,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0573,2026-09-19,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0574,2025-07-07,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0575,2025-04-18,Ballari General Hospital,ICU,Acinetobacter baumannii,Blood,Meropenem,Intermediate,65+,Synthetic demo dataset,Pending
+AMR-0576,2025-02-09,North Karnataka Institute Hospital,Oncology,Enterococcus faecium,Wound,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0577,2026-06-06,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Urine,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0578,2026-05-29,Vijayanagara Medical Centre,Medicine,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0579,2025-03-25,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0580,2025-04-02,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Other,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0581,2026-01-10,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0582,2025-10-04,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Urine,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0583,2026-01-21,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0584,2025-10-04,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Other,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0585,2025-04-27,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0586,2025-09-20,North Karnataka Institute Hospital,Paediatrics,Acinetobacter baumannii,Urine,Amikacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0587,2026-09-26,Ballari General Hospital,Paediatrics,Staphylococcus aureus,Respiratory,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0588,2025-05-27,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Wound,Linezolid,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0589,2026-07-10,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0590,2025-02-09,Kishkinda Teaching Hospital,Oncology,Pseudomonas aeruginosa,Wound,Meropenem,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0591,2026-04-10,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0592,2025-06-18,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0593,2025-10-30,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0594,2026-08-27,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Wound,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0595,2025-10-14,Ballari General Hospital,ICU,Escherichia coli,Respiratory,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0596,2026-04-27,Ballari General Hospital,ICU,Staphylococcus aureus,Blood,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0597,2026-06-09,Ballari General Hospital,Medicine,Staphylococcus aureus,Wound,Oxacillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0598,2026-03-01,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Respiratory,Oxacillin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0599,2026-07-01,Vijayanagara Medical Centre,Surgery,Staphylococcus aureus,Wound,Vancomycin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0600,2026-07-05,North Karnataka Institute Hospital,Emergency,Pseudomonas aeruginosa,Wound,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0601,2025-08-09,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0602,2025-01-05,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Urine,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0603,2026-03-16,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Other,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0604,2025-11-20,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0605,2026-06-13,Kishkinda Teaching Hospital,Oncology,Staphylococcus aureus,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0606,2025-04-05,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0607,2025-04-29,Ballari General Hospital,Medicine,Acinetobacter baumannii,Wound,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0608,2026-05-06,Kishkinda Teaching Hospital,Paediatrics,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0609,2025-01-22,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Wound,Piperacillin-tazobactam,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0610,2026-01-29,Kishkinda Teaching Hospital,Medicine,Escherichia coli,Wound,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0611,2025-06-29,Ballari General Hospital,ICU,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0612,2026-04-24,Kishkinda Teaching Hospital,Emergency,Klebsiella pneumoniae,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0613,2026-02-14,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Wound,Ciprofloxacin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0614,2026-07-25,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0615,2026-03-31,Kishkinda Teaching Hospital,Medicine,Klebsiella pneumoniae,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0616,2026-03-07,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0617,2025-08-01,Ballari General Hospital,ICU,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0618,2025-11-06,Vijayanagara Medical Centre,Oncology,Escherichia coli,Other,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0619,2026-02-10,Ballari General Hospital,Medicine,Enterococcus faecium,Other,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0620,2025-10-02,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Other,Ampicillin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0621,2025-04-01,Vijayanagara Medical Centre,ICU,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0622,2025-02-13,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Blood,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0623,2026-03-09,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Urine,Ceftazidime,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0624,2025-04-21,North Karnataka Institute Hospital,Medicine,Staphylococcus aureus,Urine,Vancomycin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0625,2026-01-25,Vijayanagara Medical Centre,Surgery,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0626,2026-08-20,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0627,2026-03-24,North Karnataka Institute Hospital,ICU,Staphylococcus aureus,Blood,Linezolid,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0628,2025-01-06,Kishkinda Teaching Hospital,Oncology,Pseudomonas aeruginosa,Blood,Piperacillin-tazobactam,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0629,2026-05-25,Vijayanagara Medical Centre,Oncology,Staphylococcus aureus,Other,Clindamycin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0630,2026-09-25,North Karnataka Institute Hospital,Surgery,Escherichia coli,Wound,Piperacillin-tazobactam,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0631,2025-06-15,Vijayanagara Medical Centre,Oncology,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0632,2025-10-17,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Other,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0633,2025-07-14,Ballari General Hospital,Medicine,Escherichia coli,Urine,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0634,2025-05-04,Kishkinda Teaching Hospital,Emergency,Escherichia coli,Other,Amikacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0635,2026-03-13,Ballari General Hospital,Emergency,Escherichia coli,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0636,2026-01-19,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Other,Amikacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0637,2026-05-09,Kishkinda Teaching Hospital,Oncology,Staphylococcus aureus,Wound,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0638,2025-12-11,Vijayanagara Medical Centre,Emergency,Acinetobacter baumannii,Other,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0639,2025-03-31,Ballari General Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0640,2025-07-11,Ballari General Hospital,Emergency,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0641,2025-05-24,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Urine,Clindamycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0642,2025-12-05,Ballari General Hospital,Surgery,Pseudomonas aeruginosa,Blood,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0643,2025-03-07,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Urine,Ciprofloxacin,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0644,2026-01-10,North Karnataka Institute Hospital,Emergency,Enterococcus faecium,Urine,Ampicillin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0645,2026-01-26,Ballari General Hospital,Medicine,Klebsiella pneumoniae,Other,Meropenem,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0646,2025-01-11,Ballari General Hospital,ICU,Staphylococcus aureus,Other,Oxacillin,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0647,2025-04-28,Kishkinda Teaching Hospital,Surgery,Enterococcus faecium,Wound,Ampicillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0648,2025-11-14,Kishkinda Teaching Hospital,ICU,Escherichia coli,Respiratory,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0649,2025-09-18,North Karnataka Institute Hospital,Emergency,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0650,2025-12-06,North Karnataka Institute Hospital,ICU,Escherichia coli,Urine,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0651,2025-01-04,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Respiratory,Linezolid,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0652,2025-06-17,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Respiratory,Ceftazidime,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0653,2025-12-24,Kishkinda Teaching Hospital,Emergency,Enterococcus faecium,Urine,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0654,2025-04-16,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Ceftriaxone,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0655,2026-01-03,North Karnataka Institute Hospital,ICU,Klebsiella pneumoniae,Blood,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0656,2026-03-17,Ballari General Hospital,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0657,2025-08-11,Kishkinda Teaching Hospital,Surgery,Escherichia coli,Other,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0658,2025-03-24,Ballari General Hospital,ICU,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0659,2025-02-27,North Karnataka Institute Hospital,Medicine,Enterococcus faecium,Other,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0660,2026-05-01,North Karnataka Institute Hospital,Surgery,Enterococcus faecium,Respiratory,Ampicillin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0661,2025-10-07,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0662,2025-08-21,North Karnataka Institute Hospital,Surgery,Escherichia coli,Respiratory,Amikacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0663,2025-08-20,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Wound,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0664,2025-05-01,Ballari General Hospital,Surgery,Acinetobacter baumannii,Blood,Meropenem,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0665,2026-05-07,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Urine,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0666,2025-09-16,North Karnataka Institute Hospital,ICU,Escherichia coli,Wound,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0667,2025-02-05,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Urine,Meropenem,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0668,2025-12-01,Ballari General Hospital,Oncology,Staphylococcus aureus,Respiratory,Clindamycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0669,2025-09-02,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Blood,Amikacin,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0670,2025-09-02,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Blood,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0671,2026-05-27,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Urine,Linezolid,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0672,2026-09-02,Vijayanagara Medical Centre,Emergency,Klebsiella pneumoniae,Blood,Amikacin,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0673,2025-12-12,Vijayanagara Medical Centre,Paediatrics,Acinetobacter baumannii,Other,Ceftazidime,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0674,2025-09-12,Vijayanagara Medical Centre,Oncology,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0675,2025-06-03,North Karnataka Institute Hospital,ICU,Pseudomonas aeruginosa,Respiratory,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0676,2026-08-29,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Urine,Amikacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0677,2026-06-27,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Urine,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Pending
+AMR-0678,2026-03-14,Kishkinda Teaching Hospital,Paediatrics,Escherichia coli,Blood,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0679,2026-07-21,Ballari General Hospital,ICU,Klebsiella pneumoniae,Wound,Ciprofloxacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0680,2025-05-01,Ballari General Hospital,ICU,Staphylococcus aureus,Respiratory,Linezolid,Intermediate,65+,Synthetic demo dataset,Pending
+AMR-0681,2025-07-26,Ballari General Hospital,Medicine,Staphylococcus aureus,Other,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0682,2025-07-22,Ballari General Hospital,Surgery,Staphylococcus aureus,Urine,Linezolid,Intermediate,18-39,Synthetic demo dataset,Pending
+AMR-0683,2025-07-10,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Wound,Meropenem,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0684,2025-08-06,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Other,Meropenem,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0685,2026-07-14,North Karnataka Institute Hospital,Oncology,Staphylococcus aureus,Other,Clindamycin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0686,2026-05-23,Ballari General Hospital,Medicine,Escherichia coli,Wound,Ceftriaxone,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0687,2026-06-09,Ballari General Hospital,ICU,Escherichia coli,Other,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0688,2026-07-29,Ballari General Hospital,Emergency,Escherichia coli,Blood,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0689,2025-07-18,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Urine,Meropenem,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0690,2026-08-02,Vijayanagara Medical Centre,Emergency,Escherichia coli,Urine,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0691,2026-07-28,Ballari General Hospital,Oncology,Enterococcus faecium,Blood,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0692,2025-02-21,North Karnataka Institute Hospital,Oncology,Klebsiella pneumoniae,Urine,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0693,2026-05-08,Ballari General Hospital,Oncology,Pseudomonas aeruginosa,Blood,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0694,2025-02-02,Ballari General Hospital,ICU,Klebsiella pneumoniae,Blood,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0695,2025-02-03,Ballari General Hospital,ICU,Acinetobacter baumannii,Respiratory,Amikacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0696,2025-09-23,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Respiratory,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0697,2026-05-12,Kishkinda Teaching Hospital,Oncology,Escherichia coli,Respiratory,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0698,2026-07-14,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Urine,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0699,2025-01-18,Ballari General Hospital,Medicine,Acinetobacter baumannii,Urine,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0700,2026-04-27,North Karnataka Institute Hospital,Medicine,Staphylococcus aureus,Blood,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0701,2025-01-26,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Urine,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0702,2026-07-29,Vijayanagara Medical Centre,Medicine,Escherichia coli,Respiratory,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0703,2025-10-24,Ballari General Hospital,ICU,Klebsiella pneumoniae,Urine,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0704,2026-02-08,Ballari General Hospital,Emergency,Klebsiella pneumoniae,Other,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0705,2025-02-26,Vijayanagara Medical Centre,Medicine,Staphylococcus aureus,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0706,2025-04-10,Ballari General Hospital,Paediatrics,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0707,2025-08-14,Ballari General Hospital,Oncology,Escherichia coli,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0708,2026-06-12,North Karnataka Institute Hospital,Medicine,Acinetobacter baumannii,Wound,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0709,2025-01-09,Kishkinda Teaching Hospital,Emergency,Escherichia coli,Urine,Piperacillin-tazobactam,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0710,2025-10-07,Kishkinda Teaching Hospital,Oncology,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0711,2025-04-06,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0712,2025-09-14,North Karnataka Institute Hospital,Surgery,Pseudomonas aeruginosa,Urine,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0713,2025-01-06,North Karnataka Institute Hospital,Oncology,Pseudomonas aeruginosa,Blood,Ceftazidime,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0714,2026-09-12,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Blood,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0715,2026-07-23,Kishkinda Teaching Hospital,ICU,Escherichia coli,Blood,Amikacin,Resistant,40-64,Synthetic demo dataset,Pending
+AMR-0716,2025-05-17,Kishkinda Teaching Hospital,Surgery,Acinetobacter baumannii,Blood,Meropenem,Intermediate,65+,Synthetic demo dataset,Reviewed
+AMR-0717,2026-05-12,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Respiratory,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0718,2026-07-04,Vijayanagara Medical Centre,Medicine,Acinetobacter baumannii,Blood,Meropenem,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0719,2026-09-14,Ballari General Hospital,Surgery,Staphylococcus aureus,Blood,Clindamycin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0720,2026-07-22,Vijayanagara Medical Centre,Medicine,Klebsiella pneumoniae,Other,Ciprofloxacin,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0721,2026-07-21,North Karnataka Institute Hospital,Medicine,Escherichia coli,Urine,Ceftriaxone,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0722,2025-02-09,Ballari General Hospital,Paediatrics,Escherichia coli,Other,Ceftriaxone,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0723,2026-03-21,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Blood,Oxacillin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0724,2025-04-25,Kishkinda Teaching Hospital,ICU,Staphylococcus aureus,Other,Linezolid,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0725,2025-05-24,Kishkinda Teaching Hospital,Emergency,Enterococcus faecium,Blood,Linezolid,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0726,2025-03-28,Vijayanagara Medical Centre,ICU,Escherichia coli,Blood,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0727,2025-11-03,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Urine,Amikacin,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0728,2025-01-08,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Wound,Ceftazidime,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0729,2025-12-08,Kishkinda Teaching Hospital,Surgery,Staphylococcus aureus,Respiratory,Clindamycin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0730,2025-01-31,Kishkinda Teaching Hospital,Emergency,Enterococcus faecium,Blood,Ampicillin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0731,2025-06-12,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Respiratory,Vancomycin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0732,2025-02-10,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Blood,Ciprofloxacin,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0733,2026-07-24,Kishkinda Teaching Hospital,Surgery,Enterococcus faecium,Blood,Linezolid,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0734,2025-10-20,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Urine,Amikacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0735,2025-10-06,Ballari General Hospital,Medicine,Escherichia coli,Urine,Meropenem,Resistant,0-17,Synthetic demo dataset,Pending
+AMR-0736,2026-06-05,Kishkinda Teaching Hospital,Emergency,Pseudomonas aeruginosa,Blood,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0737,2025-12-10,Vijayanagara Medical Centre,ICU,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0738,2025-12-10,Kishkinda Teaching Hospital,Medicine,Acinetobacter baumannii,Blood,Amikacin,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0739,2026-01-20,Ballari General Hospital,ICU,Enterococcus faecium,Respiratory,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0740,2025-03-29,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Urine,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0741,2025-11-30,Vijayanagara Medical Centre,Surgery,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Reviewed
+AMR-0742,2025-02-10,North Karnataka Institute Hospital,Medicine,Klebsiella pneumoniae,Respiratory,Ciprofloxacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0743,2025-05-30,Kishkinda Teaching Hospital,Medicine,Pseudomonas aeruginosa,Urine,Ceftazidime,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0744,2025-01-14,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Other,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0745,2025-05-06,Ballari General Hospital,Surgery,Acinetobacter baumannii,Other,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0746,2025-12-09,Ballari General Hospital,ICU,Enterococcus faecium,Urine,Ampicillin,Intermediate,18-39,Synthetic demo dataset,Reviewed
+AMR-0747,2025-03-01,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Urine,Oxacillin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0748,2026-09-11,Vijayanagara Medical Centre,Surgery,Escherichia coli,Respiratory,Ceftriaxone,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0749,2026-01-15,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Resistant,18-39,Synthetic demo dataset,Pending
+AMR-0750,2026-03-24,North Karnataka Institute Hospital,Oncology,Escherichia coli,Wound,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0751,2026-08-27,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Wound,Amikacin,Resistant,0-17,Synthetic demo dataset,Reviewed
+AMR-0752,2025-03-16,Ballari General Hospital,ICU,Enterococcus faecium,Wound,Linezolid,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0753,2025-08-23,Ballari General Hospital,Oncology,Enterococcus faecium,Other,Linezolid,Intermediate,40-64,Synthetic demo dataset,Reviewed
+AMR-0754,2026-04-15,North Karnataka Institute Hospital,Paediatrics,Pseudomonas aeruginosa,Wound,Piperacillin-tazobactam,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0755,2025-09-25,Kishkinda Teaching Hospital,Oncology,Pseudomonas aeruginosa,Other,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0756,2025-03-13,Kishkinda Teaching Hospital,ICU,Klebsiella pneumoniae,Blood,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0757,2025-10-23,Kishkinda Teaching Hospital,Paediatrics,Staphylococcus aureus,Wound,Linezolid,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0758,2026-09-27,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Blood,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0759,2026-07-16,Ballari General Hospital,Medicine,Acinetobacter baumannii,Respiratory,Ciprofloxacin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0760,2026-07-21,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Wound,Amikacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0761,2026-04-08,Vijayanagara Medical Centre,ICU,Staphylococcus aureus,Wound,Vancomycin,Intermediate,40-64,Synthetic demo dataset,Pending
+AMR-0762,2025-06-19,Vijayanagara Medical Centre,ICU,Pseudomonas aeruginosa,Urine,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0763,2025-03-03,Ballari General Hospital,ICU,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0764,2026-01-26,North Karnataka Institute Hospital,Surgery,Escherichia coli,Blood,Amikacin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0765,2025-02-08,Kishkinda Teaching Hospital,Paediatrics,Klebsiella pneumoniae,Urine,Meropenem,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0766,2026-07-27,Vijayanagara Medical Centre,Medicine,Enterococcus faecium,Urine,Ampicillin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0767,2026-03-02,Vijayanagara Medical Centre,ICU,Escherichia coli,Respiratory,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0768,2026-04-24,Ballari General Hospital,Oncology,Staphylococcus aureus,Respiratory,Vancomycin,Intermediate,0-17,Synthetic demo dataset,Reviewed
+AMR-0769,2026-08-17,Ballari General Hospital,Medicine,Pseudomonas aeruginosa,Other,Meropenem,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0770,2026-04-24,Vijayanagara Medical Centre,Surgery,Acinetobacter baumannii,Other,Ceftazidime,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0771,2026-09-16,Ballari General Hospital,ICU,Klebsiella pneumoniae,Wound,Meropenem,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0772,2026-04-14,North Karnataka Institute Hospital,ICU,Acinetobacter baumannii,Urine,Ceftazidime,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0773,2025-03-04,North Karnataka Institute Hospital,Paediatrics,Klebsiella pneumoniae,Wound,Meropenem,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0774,2026-05-12,Vijayanagara Medical Centre,Medicine,Acinetobacter baumannii,Respiratory,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0775,2025-01-22,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Wound,Vancomycin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0776,2025-07-25,North Karnataka Institute Hospital,Surgery,Staphylococcus aureus,Respiratory,Vancomycin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0777,2025-01-20,Kishkinda Teaching Hospital,ICU,Acinetobacter baumannii,Urine,Amikacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0778,2026-02-17,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Wound,Piperacillin-tazobactam,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0779,2026-01-25,North Karnataka Institute Hospital,Medicine,Pseudomonas aeruginosa,Other,Meropenem,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0780,2026-08-18,North Karnataka Institute Hospital,Medicine,Klebsiella pneumoniae,Blood,Ceftriaxone,Resistant,65+,Synthetic demo dataset,Pending
+AMR-0781,2026-07-06,Vijayanagara Medical Centre,Oncology,Klebsiella pneumoniae,Respiratory,Meropenem,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0782,2026-09-20,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Urine,Amikacin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0783,2025-03-02,Ballari General Hospital,Emergency,Klebsiella pneumoniae,Respiratory,Ceftriaxone,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0784,2026-08-20,Vijayanagara Medical Centre,ICU,Klebsiella pneumoniae,Other,Piperacillin-tazobactam,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0785,2025-11-29,Vijayanagara Medical Centre,Emergency,Staphylococcus aureus,Wound,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0786,2025-07-11,North Karnataka Institute Hospital,Emergency,Acinetobacter baumannii,Respiratory,Amikacin,Susceptible,0-17,Synthetic demo dataset,Reviewed
+AMR-0787,2025-02-27,Vijayanagara Medical Centre,Oncology,Staphylococcus aureus,Urine,Oxacillin,Susceptible,0-17,Synthetic demo dataset,Pending
+AMR-0788,2026-08-17,Kishkinda Teaching Hospital,Emergency,Staphylococcus aureus,Respiratory,Oxacillin,Resistant,65+,Synthetic demo dataset,Reviewed
+AMR-0789,2025-01-08,Kishkinda Teaching Hospital,ICU,Pseudomonas aeruginosa,Other,Ciprofloxacin,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0790,2026-09-13,Kishkinda Teaching Hospital,Emergency,Acinetobacter baumannii,Other,Amikacin,Susceptible,65+,Synthetic demo dataset,Reviewed
+AMR-0791,2025-07-15,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Other,Meropenem,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0792,2025-08-03,North Karnataka Institute Hospital,Emergency,Staphylococcus aureus,Other,Oxacillin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0793,2025-10-27,Kishkinda Teaching Hospital,Surgery,Klebsiella pneumoniae,Respiratory,Amikacin,Susceptible,40-64,Synthetic demo dataset,Reviewed
+AMR-0794,2026-08-27,Ballari General Hospital,Paediatrics,Acinetobacter baumannii,Respiratory,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
+AMR-0795,2025-03-27,Kishkinda Teaching Hospital,ICU,Enterococcus faecium,Wound,Linezolid,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0796,2026-06-21,Ballari General Hospital,Medicine,Escherichia coli,Wound,Ciprofloxacin,Susceptible,18-39,Synthetic demo dataset,Pending
+AMR-0797,2025-07-26,North Karnataka Institute Hospital,Oncology,Acinetobacter baumannii,Wound,Amikacin,Susceptible,65+,Synthetic demo dataset,Pending
+AMR-0798,2025-08-15,Kishkinda Teaching Hospital,Medicine,Enterococcus faecium,Blood,Ampicillin,Susceptible,18-39,Synthetic demo dataset,Reviewed
+AMR-0799,2026-06-16,Ballari General Hospital,ICU,Pseudomonas aeruginosa,Wound,Ciprofloxacin,Susceptible,40-64,Synthetic demo dataset,Pending
+AMR-0800,2025-12-27,Kishkinda Teaching Hospital,Surgery,Pseudomonas aeruginosa,Blood,Meropenem,Resistant,40-64,Synthetic demo dataset,Reviewed
